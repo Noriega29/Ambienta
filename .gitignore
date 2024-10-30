@@ -1,0 +1,4 @@
+# Ignorar las carpetas:
+.vs/
+Ambienta/bin/
+Ambienta/obj/

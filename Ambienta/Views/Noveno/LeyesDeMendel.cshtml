@@ -1,0 +1,785 @@
+﻿@{
+    ViewData["Title"] = "Noveno - Leyes de Mendel";
+}
+
+<style>
+    #image_1, #image_2, #image_3, #image_4 {
+        margin: 0px;
+        margin-bottom: 8px;
+    }
+
+    @@media (min-width: 576px) {
+        #image_1, #image_2, #image_3, #image_4 {
+            margin: 0px;
+            margin-left: 14px;
+            margin-bottom: 8px;
+            float: right;
+        }
+
+        #image_1 img {
+            height: 14rem;
+        }
+
+        #image_2 img {
+            height: 14rem;
+        }
+
+        #image_3 img {
+            height: 10rem;
+        }
+
+        #image_4 img {
+            height: 14rem;
+        }
+    }
+
+    @@media (min-width: 768px) {
+        #image_1, #image_2, #image_3, #image_4 {
+            margin: 0px;
+            margin-left: 14px;
+            margin-bottom: 8px;
+            float: right;
+        }
+
+        #image_4 {
+            width: 14rem;
+        }
+
+        #image_1 img {
+            height: 12rem;
+        }
+
+        #image_2 img {
+            height: 12rem;
+        }
+
+        #image_3 img {
+            height: 8rem;
+        }
+
+        #image_4 img {
+            height: 11rem;
+        }
+    }
+
+    @@media (min-width: 992px) {
+        #image_1, #image_2, #image_3, #image_4 {
+            margin: 0px;
+            margin-left: 14px;
+            float: right;
+            margin-bottom: 8px;
+        }
+
+        #image_1 img {
+            height: 12rem;
+        }
+
+        #image_2 img {
+            height: 10rem;
+        }
+
+        #image_3 img {
+            height: 6rem;
+        }
+
+        #image_4 img {
+            height: 10rem;
+        }
+    }
+</style>
+
+<div class="row">
+    <div class="d-none d-lg-block col-lg-3 col-xl-3 border-end">
+        <nav id="navbar-example3" class="h-100 flex-column align-items-stretch">
+            <nav class="nav nav-pills flex-column mt-2">
+                <!-- Nav Guia Title -->
+                <strong class="h6 my-2 ms-3">Contenido</strong>
+                <hr class="my-2 ms-3 me-4" />
+                <!-- Nav Guia Items -->
+                <ul class="nav-guide m-0 p-0">
+                    <!-- Item #1 -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#leyesdemendel">¿Qué son las leyes de mendel?</a>
+                    </li>
+                    <!-- Item #2 -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#leydelauniformidad">Ley de la uniformidad</a>
+                    </li>
+                    <!-- Item #3 -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#leydelasegregacion">Ley de la segregación</a>
+                    </li>
+                    <!-- Item #4 -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#leydelatransmisionindependiente">Ley de la transmisión independiente</a>
+                    </li>
+                </ul>
+            </nav>
+        </nav>
+    </div>
+    <div class="col-12 col-md-8 col-lg-6 col-xl-6 border-end p-0">
+        <!-- Section #1 -->
+        <section>
+            <!-- Title -->
+            <div class="section-title">
+                <h1>Leyes de Mendel</h1>
+                <hr />
+            </div>
+            <!-- Section Body -->
+            <div class="section-content scrollspy-example-3" data-bs-spy="scroll" data-bs-target="#navbar-example3" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" tabindex="0">
+                <!-- Item Content #1 -->
+                <div id="leyesdemendel" class="item-content mb-3">
+                    <!-- Title -->
+                    <h4>¿Qué son las leyes de mendel?</h4>
+                    <!-- Image #1 -->
+                    <div id="image_1" class="card card-section">
+                        @{
+                            string image_1 = Url.Content("~/images/Leyes de Mendel.jpg");
+                        }
+                        <img src="@image_1" alt="Leyes de Mendel." class="card-img-top">
+                        <div class="card-body">
+                            <p class="card-text">
+                                <i>Leyes de Mendel.</i>
+                            </p>
+                            <a href="@image_1" target="_blank">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#212529" class="bi bi-search" viewBox="0 0 16 16">
+                                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Text -->
+                    <p>
+                        Las leyes de Mendel son principios que nos explica cómo los caracteres físicos (fenotipo) y
+                        genéticos (genotipo) se heredan en un individuo. Es decir, nos ayudan a comprender la
+                        expresión de los genes (relacionado con la 1ª ley) y la transmisión de la herencia genética
+                        (relacionado con la 2ª y 3ª ley) de los padres a los hijos.
+                    </p>
+                    <p class="m-0">
+                        Para entender las leyes de Mendel es necesario que conozcas el significado de algunas palabras
+                        nuevas para nosotros, estas son:
+                    </p>
+                    <!-- Unordered Lists -->
+                    <ul class="m-0">
+                        <li><strong>Gen</strong>: contiene los caracteres hereditarios para un organismo.</li>
+                        <li>
+                            <strong>Alelos</strong>: son las versiones que tiene un gen. Por ejemplo, en el rasgo del color, podría ser verde,
+                            amarillo, rojo, etc.
+                        </li>
+                        <li><strong>Homocigoto</strong>: individuo que posee alelos iguales en un mimo gen.</li>
+                        <li><strong>Heterocigoto</strong>: individuo que posee alelos diferentes en un mimo gen.</li>
+                        <li><strong>Genotipo</strong>: conjunto de genes que tiene cada organismo.</li>
+                        <li>
+                            <strong>Fenotipo</strong>: características que podemos observar de un individuo (color de ojos, estatura, forma
+                            de la nariz, etc.).
+                        </li>
+                    </ul>
+                </div>
+                <!-- Item Content #2 -->
+                <div id="leydelauniformidad" class="item-content mb-3">
+                    <!-- Title -->
+                    <h4>Ley de la uniformidad</h4>
+                    <!-- Image #2 -->
+                    <div id="image_2" class="card card-section">
+                        @{
+                            string image_2 = Url.Content("~/images/Ley de la uniformidad.png");
+                        }
+                        <img src="@image_2" alt="Ley de la uniformidad." class="card-img-top">
+                        <div class="card-body">
+                            <p class="card-text">
+                                <i>Ley de la uniformidad.</i>
+                            </p>
+                            <a href="@image_2" target="_blank">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#212529" class="bi bi-search" viewBox="0 0 16 16">
+                                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Text -->
+                    <p>
+                        La ley de la uniformidad nos explica que el cruzamiento de dos razas puras, homocigotos,
+                        resulta en una primera generación con descendientes heterocigotos que poseen el mismo
+                        genotipo y fenotipo (del dominante).
+                    </p>
+                    <p>
+                        Por otro lado, el alelo dominante se expresa con letras mayúsculas (AA) y el alelo recesivo será
+                        expresado con letras minúsculas (aa). De esa forma, siguiendo la primera ley, si cruzamos a un
+                        organismo dominante (AA) y un recesivo (aa) obtendremos 4 descendientes iguales genotípica
+                        y fenotípicamente. Se representa de la siguiente forma: AA x aa = Aa, Aa, Aa, Aa.
+                    </p>
+                    <p>
+                        <strong>Ejemplo</strong>: Tomaremos como progenitores a dos semillas de arveja. La primera será una semilla
+                        homocigota dominante (AA) que tiene dos alelos verdes, es decir, el color verde es dominante;
+                        y la segunda será una semilla homocigota recesiva (aa) que tiene dos alelos amarillos, es decir,
+                        el color amarillo es recesivo. Entonces, al cruzar estas dos semillas homocigotas nos resulta una
+                        primera generación conformada por 4 descendientes, todos ellos heterocigotos con el mismo
+                        genotipo (Aa) y con el color verde dominante.
+                    </p>
+                </div>
+                <!-- Item Content #3 -->
+                <div id="leydelasegregacion" class="item-content mb-3">
+                    <!-- Title -->
+                    <h4>Ley de la segregación</h4>
+                    <!-- Image #3 -->
+                    <div id="image_3" class="card card-section">
+                        @{
+                            string image_3 = Url.Content("~/images/Ley de la segregación.jpg");
+                        }
+                        <img src="@image_3" alt="Ley de la segregación." class="card-img-top">
+                        <div class="card-body">
+                            <p class="card-text">
+                                <i>Ley de la segregación.</i>
+                            </p>
+                            <a href="@image_3" target="_blank">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#212529" class="bi bi-search" viewBox="0 0 16 16">
+                                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Text -->
+                    <p>
+                        La segunda ley nos explica que los alelos de un gen contenidos en los descendientes de la 1ª
+                        generación se van a segregar en la 2ª generación cuando se produzca el cruce entre ellos.
+                    </p>
+                    <p>
+                        De esa forma, algunos descendientes de la segunda generación tendrán diferencias fenotípicas
+                        y genotípicas a la de sus padres, los cuales eran ambos heterocigotos (Aa) con el fenotipo
+                        dominante A. Además, esta nueva generación tendrá una proporción fenotípica de 3:1, la cual
+                        nos indica que por cada 3 individuos existirá 1 que tiene el fenotipo (y genotipo) recesivo (aa).
+                        Se representa de la siguiente forma: Aa x Aa = AA, Aa, Aa, aa.
+                    </p>
+                    <p>
+                        <strong>Ejemplo</strong>: Si tomando dos organismos de la primera generación de arveja (Aa) y los cruzamos,
+                        obtendremos que la mitad de los nuevos descendientes son homocigotos (dominantes y
+                        recesivos), y la otra mitad son heterocigotos. Por tanto, podemos decir que los genes de la
+                        primera generación se segregaron en la segunda generación, generando así descendientes
+                        diferentes a sus padres.
+                    </p>
+                </div>
+                <!-- Item Content #4 -->
+                <div id="leydelatransmisionindependiente" class="item-content mb-3">
+                    <!-- Title -->
+                    <h4>Ley de la transmisión independiente</h4>
+                    <!-- Image #4 -->
+                    <div id="image_4" class="card card-section">
+                        @{
+                            string image_4 = Url.Content("~/images/Ley de la transmisión independiente.jpg");
+                        }
+                        <img src="@image_4" alt="Ley de la transmisión independiente." class="card-img-top">
+                        <div class="card-body">
+                            <p class="card-text">
+                                <i>Ley de la transmisión independiente.</i>
+                            </p>
+                            <a href="@image_4" target="_blank">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#212529" class="bi bi-search" viewBox="0 0 16 16">
+                                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Text -->
+                    <p>
+                        Esta ley nos indica que los rasgos heredados se trasmiten independientemente unos de otros,
+                        sin ninguna relación entre ellos, y además no existirá un patrón de herencia que afecte al de
+                        otro (Al menos cuando los genes no están ligados). Esto quiere decir que los alelos, o
+                        variaciones, de un gen se transmitirán de forma independiente a los alelos de otro gen.
+                    </p>
+                    <p>
+                        Si cruzamos individuos con 2 diferentes rasgos (podría ser el color y la textura) obtendremos
+                        una proporción de 9:3:3:1.
+                    </p>
+                    <p>
+                        <strong>Ejemplo</strong>: Para probar si lo que dice la 3ª ley es cierto o no, vamos a sumar una característica
+                        más a los cruces de semillas de arveja, la cual será su textura: lisa (dominante) o rugosa
+                        (rugosa). Este nuevo rasgo lo representaremos con la letra “B” para la textura dominante y “b”
+                        para la textura lisa.
+                    </p>
+                    <p>
+                        Si realizamos el cruzamiento de 2 semillas representadas de la siguiente forma: AABb, aaBb, y
+                        2 semillas con las mismas características: AABb y aaBb; obtendremos una proporción de
+                        9:3:3:1, lo que se interpretaría como 9 semillas amarillas y lisas, 3 semillas amarillas y rugosas,
+                        3 verdes y lisas, y por último una semilla verde y rugosa.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="col-12 col-md-4 col-lg-3 col-xl-3 p-0">
+        <aside class="my-2">
+            <!-- Aside Title -->
+            <strong class="h6 my-2 ms-2">Pon a prueba tu conocimiento</strong>
+            <hr class="my-2 ms-2 me-4" />
+            <!-- Aside Content -->
+            <div class="aside-content px-4 mb-2">
+                <!-- Aside Form -->
+                <form id="aside-form-leyesdemendel" enctype="multipart/form-data">
+                    <!-- Order List -->
+                    <ol class="m-0 ps-3">
+                        <!-- Pregunta #1 -->
+                        <li>
+                            <!-- Pregunta -->
+                            <h6>¿Qué son las leyes de Mendel?</h6>
+                            <div class="input-group input-group-column">
+                                <!-- Option #1 -->
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="question1" id="question1-option1" value="a">
+                                    <label class="form-check-label" for="question1-option1">
+                                        A) Principios para explicar cómo los caracteres físicos y genéticos se heredan
+                                    </label>
+                                </div>
+                                <!-- Option #2 -->
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="question1" id="question1-option2" value="b">
+                                    <label class="form-check-label" for="question1-option2">
+                                        B) Normas para clasificar los fenotipos y genotipos de un organismo
+                                    </label>
+                                </div>
+                                <!-- Option #3 -->
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="question1" id="question1-option3" value="c">
+                                    <label class="form-check-label" for="question1-option3">
+                                        C) Reglas para seleccionar alelos dominantes en una especie
+                                    </label>
+                                </div>
+                                <!-- Option #4 -->
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="question1" id="question1-option4" value="d">
+                                    <label class="form-check-label" for="question1-option4">
+                                        D) Métodos para modificar los genes en el laboratorio
+                                    </label>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- Pregunta #2 -->
+                        <li>
+                            <!-- Pregunta -->
+                            <h6>¿Qué es un gen?</h6>
+                            <div class="input-group input-group-column">
+                                <!-- Option #1 -->
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="question2" id="question2-option1" value="a">
+                                    <label class="form-check-label" for="question2-option1">
+                                        A) La característica física de un organismo
+                                    </label>
+                                </div>
+                                <!-- Option #2 -->
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="question2" id="question2-option2" value="b">
+                                    <label class="form-check-label" for="question2-option2">
+                                        B) La unidad de herencia que contiene información genética
+                                    </label>
+                                </div>
+                                <!-- Option #3 -->
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="question2" id="question2-option3" value="c">
+                                    <label class="form-check-label" for="question2-option3">
+                                        C) Un tipo de proteína dentro de la célula
+                                    </label>
+                                </div>
+                                <!-- Option #4 -->
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="question2" id="question2-option4" value="d">
+                                    <label class="form-check-label" for="question2-option4">
+                                        D) Un organismo que posee alelos iguales
+                                    </label>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- Pregunta #3 -->
+                        <li>
+                            <!-- Pregunta -->
+                            <h6>En la terminología de genética, ¿qué significa homocigoto?</h6>
+                            <div class="input-group input-group-column">
+                                <!-- Option #1 -->
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="question3" id="question3-option1" value="a">
+                                    <label class="form-check-label" for="question3-option1">
+                                        A) Un organismo con alelos diferentes en un gen
+                                    </label>
+                                </div>
+                                <!-- Option #2 -->
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="question3" id="question3-option2" value="b">
+                                    <label class="form-check-label" for="question3-option2">
+                                        B) Un organismo con alelos iguales en un gen
+                                    </label>
+                                </div>
+                                <!-- Option #3 -->
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="question3" id="question3-option3" value="c">
+                                    <label class="form-check-label" for="question3-option3">
+                                        C) Un organismo con un solo alelo
+                                    </label>
+                                </div>
+                                <!-- Option #4 -->
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="question3" id="question3-option4" value="d">
+                                    <label class="form-check-label" for="question3-option4">
+                                        D) Un organismo que no tiene genotipo
+                                    </label>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- Pregunta #4 -->
+                        <li>
+                            <!-- Pregunta -->
+                            <h6>Según la primera ley de Mendel, ¿qué ocurre cuando se cruzan dos organismos homocigotos de alelos distintos (AA x aa)?</h6>
+                            <div class="input-group input-group-column">
+                                <!-- Option #1 -->
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="question4" id="question4-option1" value="a">
+                                    <label class="form-check-label" for="question4-option1">
+                                        A) Los descendientes serán heterocigotos y tendrán el mismo fenotipo
+                                    </label>
+                                </div>
+                                <!-- Option #2 -->
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="question4" id="question4-option2" value="b">
+                                    <label class="form-check-label" for="question4-option2">
+                                        B) Los descendientes tendrán una proporción de 3:1
+                                    </label>
+                                </div>
+                                <!-- Option #3 -->
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="question4" id="question4-option3" value="c">
+                                    <label class="form-check-label" for="question4-option3">
+                                        C) No habrá descendientes homocigotos
+                                    </label>
+                                </div>
+                                <!-- Option #4 -->
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="question4" id="question4-option4" value="d">
+                                    <label class="form-check-label" for="question4-option4">
+                                        D) Se formarán individuos con alelos recesivos únicamente
+                                    </label>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- Pregunta #5 -->
+                        <li>
+                            <!-- Pregunta -->
+                            <h6>¿Qué representa el fenotipo de un organismo?</h6>
+                            <div class="input-group input-group-column">
+                                <!-- Option #1 -->
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="question5" id="question5-option1" value="a">
+                                    <label class="form-check-label" for="question5-option1">
+                                        A) Su material genético completo
+                                    </label>
+                                </div>
+                                <!-- Option #2 -->
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="question5" id="question5-option2" value="b">
+                                    <label class="form-check-label" for="question5-option2">
+                                        B) La combinación de alelos dominantes y recesivos
+                                    </label>
+                                </div>
+                                <!-- Option #3 -->
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="question5" id="question5-option3" value="c">
+                                    <label class="form-check-label" for="question5-option3">
+                                        C) Las características observables del organismo
+                                    </label>
+                                </div>
+                                <!-- Option #4 -->
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="question5" id="question5-option4" value="d">
+                                    <label class="form-check-label" for="question5-option4">
+                                        D) La información heredada de los ancestros
+                                    </label>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- Pregunta #6 -->
+                        <li>
+                            <!-- Pregunta -->
+                            <h6>Según la segunda ley de Mendel, ¿qué proporción fenotípica se observa en la segunda generación (F2) al cruzar dos individuos heterocigotos (Aa x Aa)?</h6>
+                            <div class="input-group input-group-column">
+                                <!-- Option #1 -->
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="question6" id="question6-option1" value="a">
+                                    <label class="form-check-label" for="question6-option1">
+                                        A) 1:1
+                                    </label>
+                                </div>
+                                <!-- Option #2 -->
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="question6" id="question6-option2" value="b">
+                                    <label class="form-check-label" for="question6-option2">
+                                        B) 2:1
+                                    </label>
+                                </div>
+                                <!-- Option #3 -->
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="question6" id="question6-option3" value="c">
+                                    <label class="form-check-label" for="question6-option3">
+                                        C) 3:1
+                                    </label>
+                                </div>
+                                <!-- Option #4 -->
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="question6" id="question6-option4" value="d">
+                                    <label class="form-check-label" for="question6-option4">
+                                        D) 4:0
+                                    </label>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- Pregunta #7 -->
+                        <li>
+                            <!-- Pregunta -->
+                            <h6>¿Qué describe la tercera ley de Mendel, o ley de la transmisión independiente?</h6>
+                            <div class="input-group input-group-column">
+                                <!-- Option #1 -->
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="question7" id="question7-option1" value="a">
+                                    <label class="form-check-label" for="question7-option1">
+                                        A) La transmisión de un gen depende de otro
+                                    </label>
+                                </div>
+                                <!-- Option #2 -->
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="question7" id="question7-option2" value="b">
+                                    <label class="form-check-label" for="question7-option2">
+                                        B) Los rasgos heredados se transmiten de manera independiente entre sí
+                                    </label>
+                                </div>
+                                <!-- Option #3 -->
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="question7" id="question7-option3" value="c">
+                                    <label class="form-check-label" for="question7-option3">
+                                        C) Solo los alelos dominantes son heredados
+                                    </label>
+                                </div>
+                                <!-- Option #4 -->
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="question7" id="question7-option4" value="d">
+                                    <label class="form-check-label" for="question7-option4">
+                                        D) Los rasgos fenotípicos son siempre dominantes
+                                    </label>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- Pregunta #8 -->
+                        <li>
+                            <!-- Pregunta -->
+                            <h6>¿Qué sucede cuando dos rasgos (como el color y la textura) se cruzan entre sí en un organismo según la tercera ley de Mendel?</h6>
+                            <div class="input-group input-group-column">
+                                <!-- Option #1 -->
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="question8" id="question8-option1" value="a">
+                                    <label class="form-check-label" for="question8-option1">
+                                        A) La proporción será siempre de 3:1
+                                    </label>
+                                </div>
+                                <!-- Option #2 -->
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="question8" id="question8-option2" value="b">
+                                    <label class="form-check-label" for="question8-option2">
+                                        B) La proporción será de 1:2:1
+                                    </label>
+                                </div>
+                                <!-- Option #3 -->
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="question8" id="question8-option3" value="c">
+                                    <label class="form-check-label" for="question8-option3">
+                                        C) La proporción será de 9:3:3:1
+                                    </label>
+                                </div>
+                                <!-- Option #4 -->
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="question8" id="question8-option4" value="d">
+                                    <label class="form-check-label" for="question8-option4">
+                                        D) Solo se hereda un rasgo a la vez
+                                    </label>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- Pregunta #9 -->
+                        <li>
+                            <!-- Pregunta -->
+                            <h6>¿Cuál de los siguientes términos describe a un organismo con alelos distintos para un mismo gen?</h6>
+                            <div class="input-group input-group-column">
+                                <!-- Option #1 -->
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="question9" id="question9-option1" value="a">
+                                    <label class="form-check-label" for="question9-option1">
+                                        A) Homocigoto
+                                    </label>
+                                </div>
+                                <!-- Option #2 -->
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="question9" id="question9-option2" value="b">
+                                    <label class="form-check-label" for="question9-option2">
+                                        B) Heterocigoto
+                                    </label>
+                                </div>
+                                <!-- Option #3 -->
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="question9" id="question9-option3" value="c">
+                                    <label class="form-check-label" for="question9-option3">
+                                        C) Dominante
+                                    </label>
+                                </div>
+                                <!-- Option #4 -->
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="question9" id="question9-option4" value="d">
+                                    <label class="form-check-label" for="question9-option4">
+                                        D) Recesivo
+                                    </label>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- Pregunta #10 -->
+                        <li>
+                            <!-- Pregunta -->
+                            <h6>En el ejemplo de Mendel con semillas de arvejas, si el color verde es dominante (A) y el amarillo es recesivo (a), ¿qué fenotipo se observa en los organismos con el genotipo "Aa"?</h6>
+                            <div class="input-group input-group-column">
+                                <!-- Option #1 -->
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="question10" id="question10-option1" value="a">
+                                    <label class="form-check-label" for="question10-option1">
+                                        A) Amarillo
+                                    </label>
+                                </div>
+                                <!-- Option #2 -->
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="question10" id="question10-option2" value="b">
+                                    <label class="form-check-label" for="question10-option2">
+                                        B) Verde
+                                    </label>
+                                </div>
+                                <!-- Option #3 -->
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="question10" id="question10-option3" value="c">
+                                    <label class="form-check-label" for="question10-option3">
+                                        C) Homocigoto
+                                    </label>
+                                </div>
+                                <!-- Option #4 -->
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="question10" id="question10-option4" value="d">
+                                    <label class="form-check-label" for="question10-option4">
+                                        D) Recesivo
+                                    </label>
+                                </div>
+                            </div>
+                        </li>
+                    </ol>
+                </form>
+            </div>
+            <!-- Aside Test Button -->
+            <div class="d-grid gap-2 mx-3">
+                <button id="aside-submit-btn" class="btn btn-outline-success" type="button" form="aside-form-leyesdemendel">Evaluar</button>
+            </div>
+        </aside>
+    </div>
+</div>
+
+<script>
+    // Variables globales para los IDs y clases
+    const ID_FORM = 'aside-form-leyesdemendel';
+    const ID_SUBMIT_BTN = 'aside-submit-btn';
+    const ID_ALERT_TEST = 'alert-test';
+    const ID_ALERT_TEST_RESPONSE = 'alert-test-response';
+    const ID_ALERT_CLOSE_BTN = 'alert-test-btn-close';
+
+    const CLASS_ALERT_SUCCESS = 'alert-success';
+    const CLASS_ALERT_DANGER = 'alert-danger';
+    const CLASS_D_NONE = 'd-none';
+    const CLASS_SHOW = 'show';
+
+    // Variable para controlar si ya se ha evaluado
+    let hasEvaluated = false;
+
+    document.addEventListener('DOMContentLoaded', function () {
+        // Función para evaluar respuestas
+        document.getElementById(ID_SUBMIT_BTN).addEventListener('click', function (event) {
+            if (hasEvaluated) return; // Evita que se evalúe más de una vez
+
+            event.preventDefault(); // Evita refrescar la página
+
+            // Obtener el formulario
+            const form = document.getElementById(ID_FORM);
+            const formData = new FormData(form);
+
+            // Enviar datos al servidor
+            fetch('/Noveno/LeyesDeMendelTest/', {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => response.json()) // Procesar la respuesta del servidor
+            .then(data => {
+                console.log(data.mensaje);
+
+                // Respuestas correctas desde el servidor
+                const correctAnswers = {
+                    'question1': data.question1, 'question2': data.question2,
+                    'question3': data.question3, 'question4': data.question4,
+                    'question5': data.question5, 'question6': data.question6,
+                    'question7': data.question7, 'question8': data.question8,
+                    'question9': data.question9, 'question10': data.question10,
+                };
+
+                // Verificar respuestas del usuario
+                for (const question in correctAnswers) {
+                    const radios = document.getElementsByName(question);
+
+                    radios.forEach(radio => {
+                        const label = document.querySelector(`label[for="${radio.id}"]`);
+                        if (radio.checked) {
+                            label.style.color = radio.value === correctAnswers[question] ? 'green' : 'red';
+                        }
+                    });
+                }
+
+                // Insertar el mensaje devuelto por el servidor en el div de alerta
+                const alertTest = document.getElementById(ID_ALERT_TEST);
+                const testResponse = document.getElementById(ID_ALERT_TEST_RESPONSE);
+                testResponse.textContent = data.mensaje;
+
+                // Asignar clase a la alerta según aprobado o no
+                alertTest.classList.remove(CLASS_ALERT_SUCCESS, CLASS_ALERT_DANGER);
+                alertTest.classList.add(data.aprobado ? CLASS_ALERT_SUCCESS : CLASS_ALERT_DANGER);
+
+                // Mostrar la alerta
+                alertTest.classList.remove(CLASS_D_NONE);
+                alertTest.classList.add(CLASS_SHOW);
+            })
+            .catch(error => {
+                console.error('Error al enviar el formulario:', error);
+                const alertTest = document.getElementById(ID_ALERT_TEST);
+                const testResponse = document.getElementById(ID_ALERT_TEST_RESPONSE);
+                testResponse.textContent = "Error al procesar la solicitud. Intente de nuevo.";
+                alertTest.classList.remove(CLASS_D_NONE);
+                alertTest.classList.add(CLASS_ALERT_DANGER, CLASS_SHOW);
+            });
+
+            // Marcar como evaluado y deshabilitar el botón
+            hasEvaluated = true;
+            this.disabled = true;
+        });
+
+        // Cerrar la alerta y resetear el formulario
+        document.getElementById(ID_ALERT_CLOSE_BTN).addEventListener('click', function () {
+            const alertTest = document.getElementById(ID_ALERT_TEST);
+            alertTest.classList.remove(CLASS_SHOW);
+            alertTest.classList.add(CLASS_D_NONE);
+
+            // Reinicia el formulario
+            const form = document.getElementById(ID_FORM);
+            form.reset();
+
+            // Reiniciar color de los labels
+            const labels = form.querySelectorAll('label');
+            labels.forEach(label => label.style.color = '');
+
+            // Habilitar botón y resetear estado
+            const testBtn = document.getElementById(ID_SUBMIT_BTN);
+            testBtn.disabled = false;
+            hasEvaluated = false;
+        });
+    });
+</script>

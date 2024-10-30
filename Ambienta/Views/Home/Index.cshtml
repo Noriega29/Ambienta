@@ -1,0 +1,83 @@
+﻿@{
+    ViewData["Title"] = "Ambienta";
+}
+
+<style>
+    .card {
+        background-color: #212529;
+        width: 90%;
+    }
+
+    .card-header, .card-body {
+        color: white;
+    }
+
+    .card-body {
+        padding: 0px;
+        border-top: 1px solid black;
+        height: 7rem;
+        align-content: center;
+        text-align: center;
+    }
+
+    .card-body h4 {
+        margin: 0px;
+        font-size: 35px;
+    }
+
+    @@media (min-width: 992px) {
+        .card {
+            width: 65%;
+        }
+
+        .card-body {
+        
+            height: 6rem;
+        }
+    }
+</style>
+
+<div class="pt-4 px-3" style="width: 100%;">
+    <div class="row">
+        <div class="col">
+            <div class="text-center">
+                <img style="height: 15rem; width: auto;" src="@Url.Content("~/images/Ambienta logo.png")" alt="Ambienta Logo." />
+            </div>
+        </div>
+    </div>
+
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4 mt-3 mx-lg-5">
+        <div class="col d-flex justify-content-center">
+            <div class="card mb-3">
+                <a asp-controller="Quinto" asp-action="Index" class="no-subrayado" style="color: black;">
+                    <div class="card-header">Curso</div>
+                    <div class="card-body">
+                        <h4 class="card-title">Quinto</h4>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="col d-flex justify-content-center">
+            <div class="card mb-3">
+                <a asp-controller="Septimo" asp-action="Index" class="no-subrayado" style="color: black;">
+                    <div class="card-header">Curso</div>
+                    <div class="card-body">
+                        <h4 class="card-title">Séptimo</h4>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="col d-flex justify-content-center">
+            <div class="card mb-3">
+                <a asp-controller="Noveno" asp-action="Index" class="no-subrayado" style="color: black;">
+                    <div class="card-header">Curso</div>
+                    <div class="card-body">
+                        <h4 class="card-title">Noveno</h4>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>

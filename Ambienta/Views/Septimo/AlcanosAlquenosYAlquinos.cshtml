@@ -1,0 +1,524 @@
+﻿@{
+    ViewData["Title"] = "Séptimo - Alcanos, Alquenos y Alquinos";
+}
+
+<style>
+    #image_1 {
+        margin: 0px;
+        margin-bottom: 8px;
+    }
+
+    @@media (min-width: 576px) {
+        #image_1 {
+            margin: 0px;
+            margin-left: 14px;
+            float: right;
+        }
+
+        #image_1 img {
+            height: 10rem;
+        }
+    }
+
+    @@media (min-width: 768px) {
+        #image_1 {
+            margin: 0px;
+            margin-left: 14px;
+            float: right;
+        }
+
+        #image_1 img {
+            height: 9rem;
+        }
+    }
+</style>
+
+<div class="row">
+    <div class="d-none d-lg-block col-lg-3 col-xl-3 border-end">
+        <nav id="navbar-example3" class="h-100 flex-column align-items-stretch">
+            <nav class="nav nav-pills flex-column mt-2">
+                <!-- Nav Guia Title -->
+                <strong class="h6 my-2 ms-3">Contenido</strong>
+                <hr class="my-2 ms-3 me-4" />
+                <!-- Nav Guia Items -->
+                <ul class="nav-guide m-0 p-0">
+                    <!-- Item #1 -->
+                    <li class="nav-item">
+                        <a class="nav-link toggle-btn" href="#alcanos">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+                                <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-up-fill" viewBox="0 0 16 16" style="display:none">
+                                <path d="m7.247 4.86-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z" />
+                            </svg>
+                            Alcanos
+                        </a>
+                        <!-- Sub-Items -->
+                        <ul class="nav sublista flex-column ms-3">
+                            <!-- Sub-Item #1 -->
+                            <li class="nav-item">
+                                <a class="nav-link my-1" href="#alcanospropiedades">Propiedades</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- Item #2 -->
+                    <li class="nav-item">
+                        <a class="nav-link toggle-btn" href="#alquenos">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+                                <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-up-fill" viewBox="0 0 16 16" style="display:none">
+                                <path d="m7.247 4.86-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z" />
+                            </svg>
+                            Alquenos
+                        </a>
+                        <!-- Sub-Items -->
+                        <ul class="nav sublista flex-column ms-3">
+                            <!-- Sub-Item #1 -->
+                            <li class="nav-item">
+                                <a class="nav-link my-1" href="#alquenospropiedades">Propiedades</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- Item #3 -->
+                    <li class="nav-item">
+                        <a class="nav-link toggle-btn" href="#alquinos">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+                                <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-up-fill" viewBox="0 0 16 16" style="display:none">
+                                <path d="m7.247 4.86-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z" />
+                            </svg>
+                            Alquinos
+                        </a>
+                        <!-- Sub-Items -->
+                        <ul class="nav sublista flex-column ms-3">
+                            <!-- Sub-Item #1 -->
+                            <li class="nav-item">
+                                <a class="nav-link my-1" href="#alquinospropiedades">Propiedades</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- Item #4 -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#resumen">Resumen fácil</a>
+                    </li>
+                </ul>
+            </nav>
+        </nav>
+    </div>
+    <div class="col-12 col-md-8 col-lg-6 col-xl-6 border-end p-0">
+        <!-- Section #1 -->
+        <section>
+            <!-- Title -->
+            <div class="section-title">
+                <h1>Alcanos, Alquenos y Alquinos</h1>
+                <hr />
+            </div>
+            <!-- Section Body -->
+            <div class="section-content scrollspy-example-3" data-bs-spy="scroll" data-bs-target="#navbar-example3" data-bs-root-margin="0px 0px -38%" data-bs-smooth-scroll="true" tabindex="0">
+                <!-- Image #1 -->
+                <div id="image_1" class="card card-section">
+                    @{
+                        string image_1 = Url.Content("~/images/Hidrocarburos.jpg");
+                    }
+                    <img src="@image_1" alt="Alcanos, Alquenos y Alquinos." class="card-img-top">
+                    <div class="card-body">
+                        <p class="card-text">
+                            <i>Alcanos, Alquenos y Alquinos.</i>
+                        </p>
+                        <a href="@image_1" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#212529" class="bi bi-search" viewBox="0 0 16 16">
+                                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <!-- Item Content #1 -->
+                <div id="alcanos" class="item-content mb-3">
+                    <!-- Title -->
+                    <h4>Alcanos</h4>
+                    <!-- Text -->
+                    <p>
+                        Los <strong>alcanos</strong> son los hidrocarburos más simples. En los alcanos, los átomos de carbono
+                        están unidos por <strong>enlaces simples</strong> (C–C) y todos los demás espacios disponibles de los
+                        carbonos se llenan con átomos de hidrógeno.
+                    </p>
+                </div>
+                <!-- Item Content #2 -->
+                <div id="alcanospropiedades" class="item-content mb-3">
+                    <!-- Title -->
+                    <p class="m-0">Propiedades:</p>
+                    <!-- Unordered Lists -->
+                    <ul>
+                        <li><strong>Enlace simple</strong>: Solo hay un enlace entre cada par de carbonos.</li>
+                        <li>
+                            Son moléculas <strong>saturadas</strong>, lo que significa que no puedes agregar más átomos de
+                            hidrógeno sin romper un enlace.
+                        </li>
+                        <li>Su fórmula general es: <strong>Cₙ H₂ₙ ₊₂</strong>, donde "n" es el número de átomos de carbono.</li>
+                    </ul>
+                </div>
+                <!-- Item Content #3 -->
+                <div id="alquenos" class="item-content mb-3">
+                    <!-- Title -->
+                    <h4>Alquenos</h4>
+                    <!-- Text -->
+                    <p>
+                        Los <strong>alquenos</strong> tienen al menos un <strong>enlace doble</strong> entre dos átomos de carbono (C=C). Este
+                        enlace doble les da algunas propiedades diferentes a los alcanos.
+                    </p>
+                </div>
+                <!-- Item Content #4 -->
+                <div id="alquenospropiedades" class="item-content mb-3">
+                    <!-- Title -->
+                    <p class="m-0">Propiedades:</p>
+                    <!-- Unordered Lists -->
+                    <ul>
+                        <li><strong>Enlace doble</strong>: Dos enlaces entre dos átomos de carbono.</li>
+                        <li>
+                            Son <strong>insaturados</strong>, porque podrías romper el enlace doble y agregar más átomos
+                            de hidrógeno.
+                        </li>
+                        <li>Su fórmula general es: <strong>Cₙ H₂ₙ</strong>.</li>
+                    </ul>
+                </div>
+                <!-- Item Content #5 -->
+                <div id="alquinos" class="item-content mb-3">
+                    <!-- Title -->
+                    <h4>Alquinos</h4>
+                    <!-- Text -->
+                    <p>
+                        Los <strong>alquinos</strong> son hidrocarburos que tienen al menos un <strong>enlace triple</strong> (C≡C) entre dos
+                        átomos de carbono. Este enlace triple les da aún más diferencia frente a los alcanos y
+                        alquenos.
+                    </p>
+                </div>
+                <!-- Item Content #6 -->
+                <div id="alquinospropiedades" class="item-content mb-3">
+                    <!-- Title -->
+                    <p class="m-0">Propiedades:</p>
+                    <!-- Unordered Lists -->
+                    <ul>
+                        <li><strong>Enlace triple</strong>: Tres enlaces entre dos átomos de carbono.</li>
+                        <li>
+                            También son <strong>insaturados</strong>, porque podrías romper el enlace triple y agregar más
+                            átomos de hidrógeno.
+                        </li>
+                        <li>Su fórmula general es: <strong>Cₙ H₂ₙ ₋₂</strong>.</li>
+                    </ul>
+                </div>
+                <!-- Item Content #7 -->
+                <div id="resumen" class="item-content mb-3">
+                    <!-- Title -->
+                    <h4>Resumen fácil:</h4>
+                    <!-- Unordered Lists -->
+                    <ul class="m-0">
+                        <li><strong>Alcanos</strong>: Enlaces simples (C–C), saturados (ej. metano).</li>
+                        <li>
+                            <strong>Alquenos</strong>: Un enlace doble (C=C), insaturados (ej. eteno)
+                        </li>
+                        <li><strong>Alquinos</strong>: Un enlace triple (C≡C), insaturados (ej. etino).</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="col-12 col-md-4 col-lg-3 col-xl-3 p-0">
+        <aside class="my-2">
+            <!-- Aside Title -->
+            <strong class="h6 my-2 ms-2">Pon a prueba tu conocimiento</strong>
+            <hr class="my-2 ms-2 me-4" />
+            <!-- Aside Content -->
+            <div class="aside-content px-4 mb-2">
+                <!-- Aside Form -->
+                <form id="aside-form-hidrocarburos" enctype="multipart/form-data">
+                    <ol class="m-0 ps-3">
+                        <!-- Pregunta #1 -->
+                        <li>
+                            <!-- Pregunta -->
+                            <h6>¿Cuál es la fórmula general de los alcanos?</h6>
+                            <div class="input-group input-group-column">
+                                <!-- Option #1 -->
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="question1" id="question1-option1" value="a">
+                                    <label class="form-check-label" for="question1-option1">
+                                        A) Cₙ H₂ₙ
+                                    </label>
+                                </div>
+                                <!-- Option #2 -->
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="question1" id="question1-option2" value="b">
+                                    <label class="form-check-label" for="question1-option2">
+                                        B) Cₙ H₂ₙ+₂
+                                    </label>
+                                </div>
+                                <!-- Option #3 -->
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="question1" id="question1-option3" value="c">
+                                    <label class="form-check-label" for="question1-option3">
+                                        C) Cₙ H₂ₙ₋₂
+                                    </label>
+                                </div>
+                                <!-- Option #4 -->
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="question1" id="question1-option4" value="d">
+                                    <label class="form-check-label" for="question1-option4">
+                                        D) Cₙ H₂ₙ₊₄
+                                    </label>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- Pregunta #2 -->
+                        <li>
+                            <h6>¿Qué tipo de enlace caracteriza a los alquenos?</h6>
+                            <div class="input-group input-group-column">
+                                <!-- Option #1 -->
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="question2" id="question2-option1" value="a">
+                                    <label class="form-check-label" for="question2-option1">
+                                        A) Enlace simple
+                                    </label>
+                                </div>
+                                <!-- Option #2 -->
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="question2" id="question2-option2" value="b">
+                                    <label class="form-check-label" for="question2-option2">
+                                        B) Enlace doble
+                                    </label>
+                                </div>
+                                <!-- Option #3 -->
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="question2" id="question2-option3" value="c">
+                                    <label class="form-check-label" for="question2-option3">
+                                        C) Enlace triple
+                                    </label>
+                                </div>
+                                <!-- Option #4 -->
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="question2" id="question2-option4" value="d">
+                                    <label class="form-check-label" for="question2-option4">
+                                        D) Enlace cuádruple
+                                    </label>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- Pregunta #3 -->
+                        <li>
+                            <!-- Pregunta -->
+                            <h6>¿Qué propiedad tienen en común los alquenos y los alquinos?</h6>
+                            <div class="input-group input-group-column">
+                                <!-- Option #1 -->
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="question3" id="question3-option1" value="a">
+                                    <label class="form-check-label" for="question3-option1">
+                                        A) Son moléculas saturadas
+                                    </label>
+                                </div>
+                                <!-- Option #2 -->
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="question3" id="question3-option2" value="b">
+                                    <label class="form-check-label" for="question3-option2">
+                                        B) Son insaturados
+                                    </label>
+                                </div>
+                                <!-- Option #3 -->
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="question3" id="question3-option3" value="c">
+                                    <label class="form-check-label" for="question3-option3">
+                                        C) Tienen un enlace simple entre carbonos
+                                    </label>
+                                </div>
+                                <!-- Option #4 -->
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="question3" id="question3-option4" value="d">
+                                    <label class="form-check-label" for="question3-option4">
+                                        D) Su fórmula general es Cₙ H₂ₙ+₂
+                                    </label>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- Pregunta #4 -->
+                        <li>
+                            <!-- Pregunta -->
+                            <h6>Si un hidrocarburo tiene un enlace triple, ¿a qué grupo pertenece?</h6>
+                            <div class="input-group input-group-column">
+                                <!-- Option #1 -->
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="question4" id="question4-option1" value="a">
+                                    <label class="form-check-label" for="question4-option1">
+                                        A) Alcanos
+                                    </label>
+                                </div>
+                                <!-- Option #2 -->
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="question4" id="question4-option2" value="b">
+                                    <label class="form-check-label" for="question4-option2">
+                                        B) Alquenos
+                                    </label>
+                                </div>
+                                <!-- Option #3 -->
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="question4" id="question4-option3" value="c">
+                                    <label class="form-check-label" for="question4-option3">
+                                        C) Alquinos
+                                    </label>
+                                </div>
+                                <!-- Option #4 -->
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="question4" id="question4-option4" value="d">
+                                    <label class="form-check-label" for="question4-option4">
+                                        D) Cicloalcanos
+                                    </label>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- Pregunta #5 -->
+                        <li>
+                            <!-- Pregunta -->
+                            <h6>¿Por qué los alquenos pueden agregar más hidrógenos?</h6>
+                            <div class="input-group input-group-column">
+                                <!-- Option #1 -->
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="question5" id="question5-option1" value="a">
+                                    <label class="form-check-label" for="question5-option1">
+                                        A) Porque tienen un enlace doble que puede romperse
+                                    </label>
+                                </div>
+                                <!-- Option #2 -->
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="question5" id="question5-option2" value="b">
+                                    <label class="form-check-label" for="question5-option2">
+                                        B) Porque son saturados
+                                    </label>
+                                </div>
+                                <!-- Option #3 -->
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="question5" id="question5-option3" value="c">
+                                    <label class="form-check-label" for="question5-option3">
+                                        C) Porque tienen enlaces simples
+                                    </label>
+                                </div>
+                                <!-- Option #4 -->
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="question5" id="question5-option4" value="d">
+                                    <label class="form-check-label" for="question5-option4">
+                                        D) Porque tienen un enlace triple
+                                    </label>
+                                </div>
+                            </div>
+                        </li>
+                    </ol>
+                </form>
+            </div>
+            <!-- Aside Test Button -->
+            <div class="d-grid gap-2 mx-3">
+                <button id="aside-submit-btn" class="btn btn-outline-success" type="button" form="aside-form-hidrocarburos">Evaluar</button>
+            </div>
+        </aside>
+    </div>
+</div>
+
+<script>
+    // Variables globales para los IDs y clases
+    const ID_FORM = 'aside-form-hidrocarburos';
+    const ID_SUBMIT_BTN = 'aside-submit-btn';
+    const ID_ALERT_TEST = 'alert-test';
+    const ID_ALERT_TEST_RESPONSE = 'alert-test-response';
+    const ID_ALERT_CLOSE_BTN = 'alert-test-btn-close';
+
+    const CLASS_ALERT_SUCCESS = 'alert-success';
+    const CLASS_ALERT_DANGER = 'alert-danger';
+    const CLASS_D_NONE = 'd-none';
+    const CLASS_SHOW = 'show';
+
+    // Variable para controlar si ya se ha evaluado
+    let hasEvaluated = false;
+
+    document.addEventListener('DOMContentLoaded', function () {
+        // Función para evaluar respuestas
+        document.getElementById(ID_SUBMIT_BTN).addEventListener('click', function (event) {
+            if (hasEvaluated) return; // Evita que se evalúe más de una vez
+
+            event.preventDefault(); // Evita refrescar la página
+
+            // Obtener el formulario
+            const form = document.getElementById(ID_FORM);
+            const formData = new FormData(form);
+
+            // Enviar datos al servidor
+            fetch('/septimo/AlcanosAlquenosYAlquinosTest/', {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => response.json()) // Procesar la respuesta del servidor
+            .then(data => {
+                console.log(data.mensaje);
+
+                // Respuestas correctas desde el servidor
+                const correctAnswers = {
+                    'question1': data.question1, 'question2': data.question2,
+                    'question3': data.question3, 'question4': data.question4,
+                    'question5': data.question5,
+                };
+
+                // Verificar respuestas del usuario
+                for (const question in correctAnswers) {
+                    const radios = document.getElementsByName(question);
+
+                    radios.forEach(radio => {
+                        const label = document.querySelector(`label[for="${radio.id}"]`);
+                        if (radio.checked) {
+                            label.style.color = radio.value === correctAnswers[question] ? 'green' : 'red';
+                        }
+                    });
+                }
+
+                // Insertar el mensaje devuelto por el servidor en el div de alerta
+                const alertTest = document.getElementById(ID_ALERT_TEST);
+                const testResponse = document.getElementById(ID_ALERT_TEST_RESPONSE);
+                testResponse.textContent = data.mensaje;
+
+                // Asignar clase a la alerta según aprobado o no
+                alertTest.classList.remove(CLASS_ALERT_SUCCESS, CLASS_ALERT_DANGER);
+                alertTest.classList.add(data.aprobado ? CLASS_ALERT_SUCCESS : CLASS_ALERT_DANGER);
+
+                // Mostrar la alerta
+                alertTest.classList.remove(CLASS_D_NONE);
+                alertTest.classList.add(CLASS_SHOW);
+            })
+            .catch(error => {
+                console.error('Error al enviar el formulario:', error);
+                const alertTest = document.getElementById(ID_ALERT_TEST);
+                const testResponse = document.getElementById(ID_ALERT_TEST_RESPONSE);
+                testResponse.textContent = "Error al procesar la solicitud. Intente de nuevo.";
+                alertTest.classList.remove(CLASS_D_NONE);
+                alertTest.classList.add(CLASS_ALERT_DANGER, CLASS_SHOW);
+            });
+
+            // Marcar como evaluado y deshabilitar el botón
+            hasEvaluated = true;
+            this.disabled = true;
+        });
+
+        // Cerrar la alerta y resetear el formulario
+        document.getElementById(ID_ALERT_CLOSE_BTN).addEventListener('click', function () {
+            const alertTest = document.getElementById(ID_ALERT_TEST);
+            alertTest.classList.remove(CLASS_SHOW);
+            alertTest.classList.add(CLASS_D_NONE);
+
+            // Reinicia el formulario
+            const form = document.getElementById(ID_FORM);
+            form.reset();
+
+            // Reiniciar color de los labels
+            const labels = form.querySelectorAll('label');
+            labels.forEach(label => label.style.color = '');
+
+            // Habilitar botón y resetear estado
+            const testBtn = document.getElementById(ID_SUBMIT_BTN);
+            testBtn.disabled = false;
+            hasEvaluated = false;
+        });
+    });
+</script>

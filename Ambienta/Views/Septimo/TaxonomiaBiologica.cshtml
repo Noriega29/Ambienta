@@ -1,0 +1,613 @@
+﻿@{
+    ViewData["Title"] = "Séptimo - Taxonomía Biológica";
+}
+
+<style>
+    #image_1 {
+        margin: 0px;
+        margin-bottom: 8px;
+    }
+
+    @@media (min-width: 576px) {
+        #image_1 {
+            margin: 0px;
+            margin-left: 14px;
+            float: right;
+        }
+
+        #image_1 img {
+            height: 10rem;
+        }
+    }
+
+    @@media (min-width: 768px) {
+        #image_1 {
+            margin: 0px;
+            margin-left: 14px;
+            float: right;
+        }
+
+        #image_1 img {
+            height: 8rem;
+        }
+    }
+
+    @@media (min-width: 992px) {
+        #image_1 {
+            margin: 0px;
+            margin-left: 14px;
+            float: right;
+        }
+
+        #image_1 img {
+            height: 9rem;
+        }
+    }
+</style>
+
+<div class="row">
+    <div class="d-none d-lg-block col-lg-3 col-xl-3 border-end">
+        <nav id="navbar-example3" class="h-100 flex-column align-items-stretch">
+            <nav class="nav nav-pills flex-column mt-2">
+                <!-- Nav Guia Title -->
+                <strong class="h6 my-2 ms-3">Contenido</strong>
+                <hr class="my-2 ms-3 me-4" />
+                <!-- Nav Guia Items -->
+                <ul class="nav-guide m-0 p-0">
+                    <!-- Item #1 -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#taxonomiabiologica">¿Qué es la Taxonomía Biológica?</a>
+                    </li>
+                    <!-- Item #2 -->
+                    <li class="nav-item">
+                        <a class="nav-link toggle-btn" href="#nivelesdeclasificacion">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+                                <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-up-fill" viewBox="0 0 16 16" style="display:none">
+                                <path d="m7.247 4.86-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z" />
+                            </svg>
+                            Niveles de Clasificación
+                        </a>
+                        <!-- Sub-Items -->
+                        <ul class="nav sublista flex-column ms-3">
+                            <!-- Sub-Item #1 -->
+                            <li class="nav-item">
+                                <a class="nav-link my-1" href="#dominio">Dominio</a>
+                            </li>
+                            <!-- Sub-Item #2 -->
+                            <li class="nav-item">
+                                <a class="nav-link my-1" href="#reino">Reino</a>
+                            </li>
+                            <!-- Sub-Item #3 -->
+                            <li class="nav-item">
+                                <a class="nav-link my-1" href="#filoodivision">Filo o División</a>
+                            </li>
+                            <!-- Sub-Item #4 -->
+                            <li class="nav-item">
+                                <a class="nav-link my-1" href="#clase">Clase</a>
+                            </li>
+                            <!-- Sub-Item #5 -->
+                            <li class="nav-item">
+                                <a class="nav-link my-1" href="#orden">Orden</a>
+                            </li>
+                            <!-- Sub-Item #6 -->
+                            <li class="nav-item">
+                                <a class="nav-link my-1" href="#familia">Familia</a>
+                            </li>
+                            <!-- Sub-Item #7 -->
+                            <li class="nav-item">
+                                <a class="nav-link my-1" href="#genero">Género</a>
+                            </li>
+                            <!-- Sub-Item #8 -->
+                            <li class="nav-item">
+                                <a class="nav-link my-1" href="#especie">Especie</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- Item #3 -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#conclusion">Conclusión</a>
+                    </li>
+                </ul>
+            </nav>
+        </nav>
+    </div>
+    <div class="col-12 col-md-8 col-lg-6 col-xl-6 border-end p-0">
+        <!-- Section #1 -->
+        <section>
+            <!-- Title -->
+            <div class="section-title">
+                <h1>Taxonomía Biológica</h1>
+                <hr />
+            </div>
+            <!-- Section Body -->
+            <div class="section-content scrollspy-example-3" data-bs-spy="scroll" data-bs-target="#navbar-example3" data-bs-root-margin="0px 0px -38%" data-bs-smooth-scroll="true" tabindex="0">
+                <!-- Item Content #1 -->
+                <div id="taxonomiabiologica" class="item-content mb-3">
+                    <!-- Title -->
+                    <h4>¿Qué es la Taxonomía Biológica?</h4>
+                    <!-- Image #1 -->
+                    <div id="image_1" class="card card-section">
+                        @{
+                            string image_1 = Url.Content("~/images/Taxonomia.jpg");
+                        }
+                        <img src="@image_1" alt="Taxonomía Biológica." class="card-img-top">
+                        <div class="card-body">
+                            <p class="card-text">
+                                <i>Taxonomía Biológica.</i>
+                            </p>
+                            <a href="@image_1" target="_blank">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#212529" class="bi bi-search" viewBox="0 0 16 16">
+                                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Text -->
+                    <p class="m-0">
+                        La <strong>taxonomía biológica</strong> es una forma de organizar y clasificar a los seres vivos según sus
+                        características en grupos. Piensa en la taxonomía como una gran "familia de seres vivos"
+                        que está dividida en diferentes niveles o categorías, desde las más generales hasta las
+                        más específicas.
+                    </p>
+                </div>
+                <!-- Item Content #2 -->
+                <div id="nivelesdeclasificacion" class="item-content">
+                    <!-- Title -->
+                    <h4>Niveles de Clasificación</h4>
+                    <!-- Text -->
+                    <p>
+                        Los <strong>niveles de clasificación</strong> en la taxonomía son como una escalera, y
+                        cada paso agrupa a los organismos que tienen algo en común. Te explico los niveles:
+                    </p>
+                </div>
+                <!-- Order List -->
+                <ol>
+                    <li>
+                        <!-- Item Content #3 -->
+                        <div id="dominio" class="item-content">
+                            <p>
+                                <strong>Dominio</strong>: Es el nivel más general. Hay tres dominios: Bacteria, Archaea
+                                (organismos microscópicos sin núcleo), y Eukarya (organismos con células con
+                                núcleo, como animales, plantas, hongos, etc.).
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <!-- Item Content #4 -->
+                        <div id="reino" class="item-content" style="margin-bottom: 16px;">
+                            <p class="m-0">
+                                <strong>Reino</strong>: El segundo nivel. Hay cinco reinos principales:
+                            </p>
+                            <!-- Unordered Lists -->
+                            <ul>
+                                <li>Animalia (animales)</li>
+                                <li>Plantae (plantas)</li>
+                                <li>Fungi (hongos)</li>
+                                <li>Protista (organismos como las algas y protozoos)</li>
+                                <li>Monera (bacterias)</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <!-- Item Content #5 -->
+                        <div id="filoodivision" class="item-content">
+                            <p>
+                                <strong>Filo</strong> o <strong>División</strong>: Agrupa organismos con características corporales similares. Por
+                                ejemplo, en el reino animal, los vertebrados (animales con columna vertebral)
+                                pertenecen al filo Chordata.
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <!-- Item Content #6 -->
+                        <div id="clase" class="item-content">
+                            <p>
+                                <strong>Clase</strong>: Dentro de cada filo, los organismos se dividen en clases. En los animales,
+                                por ejemplo, los mamíferos pertenecen a la clase Mammalia.
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <!-- Item Content #7 -->
+                        <div id="orden" class="item-content">
+                            <p>
+                                <strong>Orden</strong>: Cada clase se subdivide en órdenes. Por ejemplo, los carnívoros (como
+                                los leones y los lobos) pertenecen al orden Carnivora.
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <!-- Item Content #8 -->
+                        <div id="familia" class="item-content">
+                            <p>
+                                <strong>Familia</strong>: Dentro de cada orden hay familias. Los felinos (gatos, leones, tigres)
+                                pertenecen a la familia Felidae.
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <!-- Item Content #9 -->
+                        <div id="genero" class="item-content">
+                            <p>
+                                <strong>Género</strong>: Agrupa a organismos muy cercanos. El género Panthera incluye a los
+                                leones (Panthera leo) y tigres (Panthera tigris).
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <!-- Item Content #10 -->
+                        <div id="especie" class="item-content">
+                            <p>
+                                <strong>Especie</strong>: Es el nivel más específico. Se refiere a organismos que pueden
+                                reproducirse entre sí y tener crías fértiles. Un ejemplo es el ser humano, que
+                                pertenece a la especie Homo sapiens.
+                            </p>
+                        </div>
+                    </li>
+                </ol>
+                <!-- Item Content #11 -->
+                <div id="conclusion" class="item-content">
+                    <h4>Conclusión</h4>
+                    <p class="m-0">
+                        Entonces, si quieres clasificar a un león, dirías:
+                    </p>
+                    <!-- Unordered Lists -->
+                    <ul class="m-0">
+                        <li>Dominio: Eukarya</li>
+                        <li>Reino: Animalia</li>
+                        <li>Filo: Chordata</li>
+                        <li>Clase: Mammalia</li>
+                        <li>Orden: Carnivora</li>
+                        <li>Familia: Felidae</li>
+                        <li>Género: Panthera</li>
+                        <li>Especie: Panthera leo</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="col-12 col-md-4 col-lg-3 col-xl-3 p-0">
+        <aside class="my-2">
+            <!-- Aside Title -->
+            <strong class="h6 my-2 ms-2">Pon a prueba tu conocimiento</strong>
+            <hr class="my-2 ms-2 me-4" />
+            <!-- Aside Content -->
+            <div class="aside-content px-4 mb-2">
+                <!-- Aside Form -->
+                <form id="aside-form-taxonomia" enctype="multipart/form-data">
+                    <!-- Order List -->
+                    <ol class="m-0 ps-3">
+                        <!-- Form Item #1 -->
+                        <li>
+                            <!-- Question -->
+                            <h6>¿Qué es la taxonomía biológica?</h6>
+                            <!-- Options -->
+                            <div class="input-group input-group-column">
+                                <!-- Option #1 -->
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="question1" id="question1-option1" value="a">
+                                    <label class="form-check-label" for="question1-option1">
+                                        a) Un proceso para la fotosíntesis de las plantas.
+                                    </label>
+                                </div>
+                                <!-- Option #2 -->
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="question1" id="question1-option2" value="b">
+                                    <label class="form-check-label" for="question1-option2">
+                                        b) Un método para organizar y clasificar a los seres vivos según sus características.
+                                    </label>
+                                </div>
+                                <!-- Option #3 -->
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="question1" id="question1-option3" value="c">
+                                    <label class="form-check-label" for="question1-option3">
+                                        c) Una forma de medir la velocidad de los animales.
+                                    </label>
+                                </div>
+                                <!-- Option #4 -->
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="question1" id="question1-option4" value="d">
+                                    <label class="form-check-label" for="question1-option4">
+                                        d) Un tipo de reproducción celular.
+                                    </label>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- Form Item #2 -->
+                        <li>
+                            <!-- Question -->
+                            <h6>¿Cuál es el nivel más general en la clasificación biológica?</h6>
+                            <!-- Options -->
+                            <div class="input-group input-group-column">
+                                <!-- Option #1 -->
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="question2" id="question2-option1" value="a">
+                                    <label class="form-check-label" for="question2-option1">
+                                        a) Reino
+                                    </label>
+                                </div>
+                                <!-- Option #2 -->
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="question2" id="question2-option2" value="b">
+                                    <label class="form-check-label" for="question2-option2">
+                                        b) Filo
+                                    </label>
+                                </div>
+                                <!-- Option #3 -->
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="question2" id="question2-option3" value="c">
+                                    <label class="form-check-label" for="question2-option3">
+                                        c) Dominio
+                                    </label>
+                                </div>
+                                <!-- Option #4 -->
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="question2" id="question2-option4" value="d">
+                                    <label class="form-check-label" for="question2-option4">
+                                        d) Clase
+                                    </label>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- Form Item #3 -->
+                        <li>
+                            <!-- Question -->
+                            <h6>¿A qué reino pertenecen los animales?</h6>
+                            <!-- Options -->
+                            <div class="input-group input-group-column">
+                                <!-- Option #1 -->
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="question3" id="question3-option1" value="a">
+                                    <label class="form-check-label" for="question3-option1">
+                                        a) Monera
+                                    </label>
+                                </div>
+                                <!-- Option #2 -->
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="question3" id="question3-option2" value="b">
+                                    <label class="form-check-label" for="question3-option2">
+                                        b) Protista
+                                    </label>
+                                </div>
+                                <!-- Option #3 -->
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="question3" id="question3-option3" value="c">
+                                    <label class="form-check-label" for="question3-option3">
+                                        c) Fungi
+                                    </label>
+                                </div>
+                                <!-- Option #4 -->
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="question3" id="question3-option4" value="d">
+                                    <label class="form-check-label" for="question3-option4">
+                                        d) Animalia
+                                    </label>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- Form Item #4 -->
+                        <li>
+                            <!-- Question -->
+                            <h6>¿Cuál de los siguientes organismos pertenece al filo Chordata?</h6>
+                            <!-- Options -->
+                            <div class="input-group input-group-column">
+                                <!-- Option #1 -->
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="question4" id="question4-option1" value="a">
+                                    <label class="form-check-label" for="question4-option1">
+                                        a) Hongos
+                                    </label>
+                                </div>
+                                <!-- Option #2 -->
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="question4" id="question4-option2" value="b">
+                                    <label class="form-check-label" for="question4-option2">
+                                        b) Algas
+                                    </label>
+                                </div>
+                                <!-- Option #3 -->
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="question4" id="question4-option3" value="c">
+                                    <label class="form-check-label" for="question4-option3">
+                                        c) Vertebrados
+                                    </label>
+                                </div>
+                                <!-- Option #4 -->
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="question4" id="question4-option4" value="d">
+                                    <label class="form-check-label" for="question4-option4">
+                                        d) Bacterias
+                                    </label>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- Form Item #5 -->
+                        <li>
+                            <!-- Question -->
+                            <h6>¿Qué nivel de clasificación viene después de "Clase"?</h6>
+                            <!-- Options -->
+                            <div class="input-group input-group-column">
+                                <!-- Option #1 -->
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="question5" id="question5-option1" value="a">
+                                    <label class="form-check-label" for="question5-option1">
+                                        a) Orden
+                                    </label>
+                                </div>
+                                <!-- Option #2 -->
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="question5" id="question5-option2" value="b">
+                                    <label class="form-check-label" for="question5-option2">
+                                        b) Familia
+                                    </label>
+                                </div>
+                                <!-- Option #3 -->
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="question5" id="question5-option3" value="c">
+                                    <label class="form-check-label" for="question5-option3">
+                                        c) Género
+                                    </label>
+                                </div>
+                                <!-- Option #4 -->
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="question5" id="question5-option4" value="d">
+                                    <label class="form-check-label" for="question5-option4">
+                                        d) Especie
+                                    </label>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- Form Item #6 -->
+                        <li>
+                            <!-- Question -->
+                            <h6>
+                                ¿Qué nivel de clasificación agrupa a organismos que pueden reproducirse entre sí y tener crías fértiles?
+                            </h6>
+                            <!-- Options -->
+                            <div class="input-group input-group-column">
+                                <!-- Option #1 -->
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="question6" id="question6-option1" value="a">
+                                    <label class="form-check-label" for="question6-option1">
+                                        a) Reino
+                                    </label>
+                                </div>
+                                <!-- Option #2 -->
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="question6" id="question6-option2" value="b">
+                                    <label class="form-check-label" for="question6-option2">
+                                        b) Clase
+                                    </label>
+                                </div>
+                                <!-- Option #3 -->
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="question6" id="question6-option3" value="c">
+                                    <label class="form-check-label" for="question6-option3">
+                                        c) Especie
+                                    </label>
+                                </div>
+                                <!-- Option #4 -->
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="question6" id="question6-option4" value="d">
+                                    <label class="form-check-label" for="question6-option4">
+                                        d) Filo
+                                    </label>
+                                </div>
+                            </div>
+                        </li>
+                    </ol>
+                </form>
+            </div>
+            <!-- Aside Test Button -->
+            <div class="d-grid gap-2 mx-3">
+                <button id="aside-submit-btn" class="btn btn-outline-success" type="button" form="aside-form-taxonomia">Evaluar</button>
+            </div>
+        </aside>
+    </div>
+</div>
+
+<script>
+    // Variables globales para los IDs y clases
+    const ID_FORM = 'aside-form-taxonomia';
+    const ID_SUBMIT_BTN = 'aside-submit-btn';
+    const ID_ALERT_TEST = 'alert-test';
+    const ID_ALERT_TEST_RESPONSE = 'alert-test-response';
+    const ID_ALERT_CLOSE_BTN = 'alert-test-btn-close';
+
+    const CLASS_ALERT_SUCCESS = 'alert-success';
+    const CLASS_ALERT_DANGER = 'alert-danger';
+    const CLASS_D_NONE = 'd-none';
+    const CLASS_SHOW = 'show';
+
+    // Variable para controlar si ya se ha evaluado
+    let hasEvaluated = false;
+
+    document.addEventListener('DOMContentLoaded', function () {
+        // Función para evaluar respuestas
+        document.getElementById(ID_SUBMIT_BTN).addEventListener('click', function (event) {
+            if (hasEvaluated) return; // Evita que se evalúe más de una vez
+
+            event.preventDefault(); // Evita refrescar la página
+
+            // Obtener el formulario
+            const form = document.getElementById(ID_FORM);
+            const formData = new FormData(form);
+
+            // Enviar datos al servidor
+            fetch('/Septimo/TaxonomiaBiologicaTest/', {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => response.json()) // Procesar la respuesta del servidor
+            .then(data => {
+                console.log(data.mensaje);
+
+                // Respuestas correctas desde el servidor
+                const correctAnswers = {
+                    'question1': data.question1, 'question2': data.question2,
+                    'question3': data.question3, 'question4': data.question4,
+                    'question5': data.question5, 'question6': data.question6,
+                };
+
+                // Verificar respuestas del usuario
+                for (const question in correctAnswers) {
+                    const radios = document.getElementsByName(question);
+
+                    radios.forEach(radio => {
+                        const label = document.querySelector(`label[for="${radio.id}"]`);
+                        if (radio.checked) {
+                            label.style.color = radio.value === correctAnswers[question] ? 'green' : 'red';
+                        }
+                    });
+                }
+
+                // Insertar el mensaje devuelto por el servidor en el div de alerta
+                const alertTest = document.getElementById(ID_ALERT_TEST);
+                const testResponse = document.getElementById(ID_ALERT_TEST_RESPONSE);
+                testResponse.textContent = data.mensaje;
+
+                // Asignar clase a la alerta según aprobado o no
+                alertTest.classList.remove(CLASS_ALERT_SUCCESS, CLASS_ALERT_DANGER);
+                alertTest.classList.add(data.aprobado ? CLASS_ALERT_SUCCESS : CLASS_ALERT_DANGER);
+
+                // Mostrar la alerta
+                alertTest.classList.remove(CLASS_D_NONE);
+                alertTest.classList.add(CLASS_SHOW);
+            })
+            .catch(error => {
+                console.error('Error al enviar el formulario:', error);
+                const alertTest = document.getElementById(ID_ALERT_TEST);
+                const testResponse = document.getElementById(ID_ALERT_TEST_RESPONSE);
+                testResponse.textContent = "Error al procesar la solicitud. Intente de nuevo.";
+                alertTest.classList.remove(CLASS_D_NONE);
+                alertTest.classList.add(CLASS_ALERT_DANGER, CLASS_SHOW);
+            });
+
+            // Marcar como evaluado y deshabilitar el botón
+            hasEvaluated = true;
+            this.disabled = true;
+        });
+
+        // Cerrar la alerta y resetear el formulario
+        document.getElementById(ID_ALERT_CLOSE_BTN).addEventListener('click', function () {
+            const alertTest = document.getElementById(ID_ALERT_TEST);
+            alertTest.classList.remove(CLASS_SHOW);
+            alertTest.classList.add(CLASS_D_NONE);
+
+            // Reinicia el formulario
+            const form = document.getElementById(ID_FORM);
+            form.reset();
+
+            // Reiniciar color de los labels
+            const labels = form.querySelectorAll('label');
+            labels.forEach(label => label.style.color = '');
+
+            // Habilitar botón y resetear estado
+            const testBtn = document.getElementById(ID_SUBMIT_BTN);
+            testBtn.disabled = false;
+            hasEvaluated = false;
+        });
+    });
+</script>

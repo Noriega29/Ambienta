@@ -1,0 +1,849 @@
+﻿@{
+    ViewData["Title"] = "Quinto - La Célula";
+}
+
+<style>
+    #image_1, #image_2, #image_3, #image_4, #image_5 {
+        margin: 0px;
+        margin-bottom: 8px;
+    }
+
+    @@media (min-width: 576px) {
+        #image_1, #image_2, #image_3, #image_4, #image_5 {
+            margin: 0px;
+            margin-left: 14px;
+            float: right;
+        }
+
+        #image_1 img {
+            height: 8rem;
+        }
+
+        #image_2 img, #image_3 img, #image_4 img, #image_5 img {
+            height: 10rem;
+        }
+    }
+
+    @@media (min-width: 768px) {
+        #image_1, #image_2, #image_3, #image_4, #image_5 {
+            margin: 0px;
+            margin-left: 14px;
+            float: right;
+        }
+
+        #image_1 img {
+            height: 6rem;
+        }
+
+        #image_2 img, #image_3 img, #image_4 img, #image_5 img {
+            height: 8rem;
+        }
+    }
+
+    @@media (min-width: 992px) {
+        #image_1, #image_2, #image_3, #image_4, #image_5 {
+            margin: 0px;
+            margin-left: 14px;
+            float: right;
+        }
+
+        #image_1 img {
+            height: 8rem;
+        }
+
+        #image_2 img, #image_3 img, #image_4 img, #image_5 img {
+            height: 10rem;
+        }
+    }
+</style>
+
+<div class="row">
+    <div class="d-none d-lg-block col-lg-3 col-xl-3 border-end">
+        <nav id="navbar-example3" class="h-100 flex-column align-items-stretch">
+            <nav class="nav nav-pills flex-column mt-2">
+                <!-- Nav Guia Title -->
+                <strong class="h6 my-2 ms-3">Contenido</strong>
+                <hr class="my-2 ms-3 me-4" />
+                <!-- Nav Guia Items -->
+                <ul class="nav-guide m-0 p-0">
+                    <!-- Item #1 -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#lacelula">¿Qué son las Células?</a>
+                    </li>
+                    <!-- Item #2 -->
+                    <li class="nav-item">
+                        <a class="nav-link toggle-btn" href="#partesdelacelulahumana">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+                                <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-up-fill" viewBox="0 0 16 16" style="display:none">
+                                <path d="m7.247 4.86-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z" />
+                            </svg>
+                            Partes de la Célula Humana
+                        </a>
+                        <!-- Sub-Items -->
+                        <ul class="nav sublista flex-column ms-2">
+                            <!-- Sub-Item #1 -->
+                            <li class="nav-item">
+                                <a class="nav-link my-1" href="#MembranaCelular">Membrana Celular</a>
+                            </li>
+                            <!-- Sub-Item #2 -->
+                            <li class="nav-item">
+                                <a class="nav-link my-1" href="#Citoplasma">Citoplasma</a>
+                            </li>
+                            <!-- Sub-Item #3 -->
+                            <li class="nav-item">
+                                <a class="nav-link my-1" href="#Nucleo">Núcleo</a>
+                            </li>
+                            <!-- Sub-Item #4 -->
+                            <li class="nav-item">
+                                <a class="nav-link my-1" href="#Mitocondrias">Mitocondrias</a>
+                            </li>
+                            <!-- Sub-Item #5 -->
+                            <li class="nav-item">
+                                <a class="nav-link my-1" href="#Ribosomas">Ribosomas</a>
+                            </li>
+                            <!-- Sub-Item #6 -->
+                            <li class="nav-item">
+                                <a class="nav-link my-1" href="#ReticuloEndoplasmático">Retículo Endoplasmático</a>
+                            </li>
+                            <!-- Sub-Item #7 -->
+                            <li class="nav-item">
+                                <a class="nav-link my-1" href="#AparatodeGolgi">Aparato de Golgi</a>
+                            </li>
+                            <!-- Sub-Item #8 -->
+                            <li class="nav-item">
+                                <a class="nav-link my-1" href="#Lisosomas">Lisosomas</a>
+                            </li>
+                            <!-- Sub-Item #9 -->
+                            <li class="nav-item">
+                                <a class="nav-link my-1" href="#Vacuolas">Vacuolas</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- Item #3 -->
+                    <li class="nav-item">
+                        <a class="nav-link toggle-btn" href="#TiposDeCélulasHumanas">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+                                <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-up-fill" viewBox="0 0 16 16" style="display:none">
+                                <path d="m7.247 4.86-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z" />
+                            </svg>
+                            Tipos de Células Humanas
+                        </a>
+                        <!-- Sub-Items -->
+                        <ul class="nav sublista flex-column ms-2">
+                            <!-- Sub-Item #1 -->
+                            <li class="nav-item">
+                                <a class="nav-link my-1" href="#CélulasDelSistemaInmunológico">Células del Sistema Inmunológico</a>
+                            </li>
+                            <!-- Sub-Item #2 -->
+                            <li class="nav-item">
+                                <a class="nav-link my-1" href="#CélulasMusculares">Células Musculares</a>
+                            </li>
+                            <!-- Sub-Item #3 -->
+                            <li class="nav-item">
+                                <a class="nav-link my-1" href="#CélulasEpiteliales">Células Epiteliales</a>
+                            </li>
+                            <!-- Sub-Item #4 -->
+                            <li class="nav-item">
+                                <a class="nav-link my-1" href="#CélulasNerviosas">Células Nerviosas</a>
+                            </li>
+                            <!-- Sub-Item #5 -->
+                            <li class="nav-item">
+                                <a class="nav-link my-1" href="#CélulasEspecializadasEnLaProducciónDeSustancias">Células Especializadas en la Producción de Sustancias</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- Item #3 -->
+                    <li class="nav-item">
+                        <a class="nav-link toggle-btn" href="#DiferenciasentreCelulasProcariontesyEucariontes">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+                                <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-up-fill" viewBox="0 0 16 16" style="display:none">
+                                <path d="m7.247 4.86-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z" />
+                            </svg>
+                            Diferencias entre Células Procariontes y Eucariontes
+                        </a>
+                        <!-- Sub-Items -->
+                        <ul class="nav sublista flex-column ms-2">
+                            <!-- Sub-Item #1 -->
+                            <li class="nav-item">
+                                <a class="nav-link my-1" href="#CélulasProcariontes">Células Procariontes</a>
+                            </li>
+                            <!-- Sub-Item #2 -->
+                            <li class="nav-item">
+                                <a class="nav-link my-1" href="#CélulasEucariontes">Células Eucariontes</a>
+                            </li>
+                            <!-- Sub-Item #3 -->
+                            <li class="nav-item">
+                                <a class="nav-link my-1" href="#ResumenDeDiferencias">Resumen de Diferencias</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- Item #4 -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Conclusión">Conclusión</a>
+                    </li>
+                </ul>
+            </nav>
+        </nav>
+    </div>
+    <div class="col-12 col-md-8 col-lg-6 col-xl-6 border-end p-0">
+        <!-- Section #1 -->
+        <section>
+            <!-- Title -->
+            <div class="section-title">
+                <h1>La Célula</h1>
+                <hr />
+            </div>
+            <!-- Section Body -->
+            <div class="section-content scrollspy-example-3" data-bs-spy="scroll" data-bs-target="#navbar-example3" data-bs-root-margin="0px 0px -38%" data-bs-smooth-scroll="true" tabindex="0">
+                <!-- Item Content #1 -->
+                <div id="lacelula">
+                    <!-- Title -->
+                    <h4>¿Qué son las Células?</h4>
+                    <!-- Image #1 -->
+                    <div id="image_1" class="card card-section">
+                        @{
+                            string image_1 = Url.Content("~/images/celula-animal-y-vegetal.png");
+                        }
+                        <img src="@image_1" alt="La Célula." class="card-img-top">
+                        <div class="card-body">
+                            <p class="card-text">
+                                <i>La Célula.</i>
+                            </p>
+                            <a href="@image_1" target="_blank">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#212529" class="bi bi-search" viewBox="0 0 16 16">
+                                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Text -->
+                    <p>
+                        Las células son la unidad más pequeña de los organismos vivos, aunque están
+                        compuestas por elementos aún menores, cada uno con una función propia. En el
+                        caso de las células humanas, su tamaño es microscópico, y varía según el tipo de
+                        célula. Un ejemplo es el óvulo fecundado, que, aunque es la célula más grande,
+                        sigue siendo invisible a simple vista.
+                    </p>
+                </div>
+                <!-- Item Content #2 -->
+                <div id="partesdelacelulahumana">
+                    <!-- Title -->
+                    <h4>Partes de la Célula Humana</h4>
+                    <!-- Image #2 -->
+                    <div id="image_2" class="card card-section">
+                        @{
+                            string image_2 = Url.Content("~/images/LA-CELULA-Y-SUS-PARTES.webp");
+                        }
+                        <img src="@image_2" alt="Partes de la Célula." class="card-img-top">
+                        <div class="card-body">
+                            <p class="card-text">
+                                <i>Partes de la Célula.</i>
+                            </p>
+                            <a href="@image_2" target="_blank">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#212529" class="bi bi-search" viewBox="0 0 16 16">
+                                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Text -->
+                    <p>
+                        Imagina que la célula es como una pequeña ciudad que tiene diferentes partes, y cada
+                        una cumple una función muy importante para que todo funcione bien. Aquí te explico las
+                        principales partes de la <strong>célula humana</strong>:
+                    </p>
+                    <ol>
+                        <li id="MembranaCelular" class="item-content">
+                            <strong>Membrana Celular</strong>: Es como la "muralla" o "frontera" que rodea la célula. Se encarga de protegerla y
+                            controlar qué entra y qué sale de la célula, como si fuera un guardia que deja pasar solo
+                            lo necesario, como nutrientes, y expulsa lo que no necesita.
+                        </li>
+                        <li id="Citoplasma" class="item-content">
+                            <strong>Citoplasma</strong>: Dentro de la célula, hay una especie de "gel" o líquido llamado citoplasma, donde están
+                            flotando todas las demás partes de la célula. ¡Es como el agua de una piscina donde se
+                            mueven todas las estructuras!
+                        </li>
+                        <li id="Nucleo" class="item-content">
+                            <strong>Núcleo</strong>: El núcleo es como el "cerebro" o el "centro de control" de la célula. Aquí está guardada
+                            toda la información importante, como si fuera un manual de instrucciones que dice a la
+                            célula qué hacer. Esta información está en el ADN, que decide cosas como cómo debe
+                            crecer la célula o cuándo debe dividirse.
+                        </li>
+                        <li id="Mitocondrias" class="item-content">
+                            <strong>Mitocondrias</strong>: Son como las "fábricas de energía" de la célula. Se encargan de producir la energía que
+                            la célula necesita para hacer todas sus actividades. ¡Sin mitocondrias, la célula no
+                            tendría fuerzas para trabajar!
+                        </li>
+                        <li id="Ribosomas" class="item-content">
+                            <strong>Ribosomas</strong>: Estos son como las "fábricas de proteínas". Las proteínas son muy importantes porque
+                            ayudan a construir y reparar las partes de la célula, además de realizar muchas otras
+                            tareas vitales. Los ribosomas toman los materiales y construyen las proteínas que la
+                            célula necesita.
+                        </li>
+                        <li id="ReticuloEndoplasmático" class="item-content">
+                            <strong>Retículo Endoplasmático</strong>: Este es como una "red de túneles" que se extiende por toda la célula. Hay dos tipos:
+                            <ul>
+                                <li>
+                                    <strong>Retículo Endoplasmático Rugoso</strong>: Tiene ribosomas pegados y ayuda a hacer
+                                    más proteínas.
+                                </li>
+                                <li>
+                                    <strong>Retículo Endoplasmático Liso</strong>: No tiene ribosomas y se encarga de fabricar
+                                    grasas y eliminar sustancias tóxicas.
+                                </li>
+                            </ul>
+                        </li>
+                        <li id="AparatodeGolgi" class="item-content">
+                            <strong>Aparato de Golgi</strong>: Es como la "oficina de correos" de la célula. Recibe las proteínas que fabrican los
+                            ribosomas y las modifica, empaca y envía a diferentes partes de la célula o fuera de ella.
+                            ¡Es muy eficiente!
+                        </li>
+                        <li id="Lisosomas" class="item-content">
+                            <strong>Lisosomas</strong>: Los lisosomas son como los "basureros" o "recicladores" de la célula. Se encargan de
+                            descomponer y eliminar lo que ya no sirve, como materiales viejos o dañados.
+                        </li>
+                        <li id="Vacuolas" class="item-content">
+                            <strong>Vacuolas</strong>: Son como "almacenes" dentro de la célula, donde se guardan diferentes cosas, como
+                            agua, nutrientes o desechos. En algunas células, las vacuolas son más grandes que en
+                            otras.
+                        </li>
+                    </ol>
+                </div>
+                <!-- Item Content #3 -->
+                <div id="TiposDeCélulasHumanas">
+                    <!-- Title -->
+                    <h4>Tipos de Células Humanas</h4>
+                    <!-- Image #3 -->
+                    <div id="image_3" class="card card-section">
+                        @{
+                            string image_3 = Url.Content("~/images/Tipos de Células Humanas.jpg");
+                        }
+                        <img src="@image_3" alt="Tipos de Células Humanas." class="card-img-top">
+                        <div class="card-body">
+                            <p class="card-text">
+                                <i>Tipos de Células Humanas.</i>
+                            </p>
+                            <a href="@image_3" target="_blank">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#212529" class="bi bi-search" viewBox="0 0 16 16">
+                                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Text -->
+                    <p>
+                        El cuerpo humano está formado por diferentes tipos de células, que se pueden clasificar en grupos
+                        según las funciones que realizan:
+                    </p>
+                    <ol>
+                        <li id="CélulasDelSistemaInmunológico" class="item-content">
+                            <strong>Células del Sistema Inmunológico</strong>
+                            <ul>
+                                <li>
+                                    <strong>Glóbulos Blancos</strong>: Son esenciales para defender al cuerpo contra infecciones
+                                    y enfermedades. Se mueven libremente por el organismo y pueden atacar a bacterias y virus..
+                                </li>
+                            </ul>
+                        </li>
+                        <li id="CélulasMusculares" class="item-content">
+                            <strong>Células Musculares</strong>
+                            <ul>
+                                <li>
+                                    <strong>Células Musculares Esqueléticas</strong>: Permiten el movimiento voluntario del cuerpo
+                                    y están unidas entre sí para formar los músculos.
+                                </li>
+                                <li>
+                                    <strong>Células Musculares Cardíacas</strong>: Son responsables de la contracción del corazón,
+                                    lo que permite bombear sangre a todo el cuerpo.
+                                </li>
+                                <li>
+                                    <strong>Células Musculares Lisas</strong>: Se encuentran en las paredes de órganos internos y
+                                    controlan movimientos involuntarios, como la digestión.
+                                </li>
+                            </ul>
+                        </li>
+                        <li id="CélulasEpiteliales" class="item-content">
+                            <strong>Células Epiteliales</strong>
+                            <ul>
+                                <li>
+                                    <strong>Células de la Piel</strong>: Forman la capa externa del cuerpo, protegiéndolo y ayudando
+                                    en la curación de heridas.
+                                </li>
+                                <li>
+                                    <strong>Células del Revestimiento Pulmonar</strong>: Producen mucosidad para mantener las vías
+                                    respiratorias húmedas y protegidas.
+                                </li>
+                                <li>
+                                    <strong>Células de la Boca</strong>: Generan saliva, que ayuda en la digestión y protege las mucosas.
+                                </li>
+                            </ul>
+                        </li>
+                        <li id="CélulasNerviosas" class="item-content">
+                            <strong>Células Nerviosas</strong>
+                            <ul>
+                                <li>
+                                    <strong>Neuronas</strong>: Son responsables de la transmisión de impulsos eléctricos en el sistema
+                                    nervioso, permitiendo la comunicación entre el cerebro, la médula espinal y el resto del cuerpo.
+                                </li>
+                            </ul>
+                        </li>
+                        <li id="CélulasEspecializadasEnLaProducciónDeSustancias" class="item-content">
+                            <strong>Células Especializadas en la Producción de Sustancias</strong>
+                            <ul>
+                                <li>
+                                    <strong>Células de las Mamas</strong>: Producen leche durante la lactancia.
+                                </li>
+                                <li>
+                                    <strong>Células del Páncreas</strong>: Secretan insulina, que regula los niveles de azúcar en la sangre.
+                                </li>
+                            </ul>
+                        </li>
+                    </ol>
+                </div>
+                <!-- Item Content #4 -->
+                <div id="DiferenciasentreCelulasProcariontesyEucariontes">
+                    <!-- Title -->
+                    <h4>Diferencias entre Células Procariontes y Eucariontes</h4>
+                    <ol>
+                        <li id="CélulasProcariontes" class="item-content">
+                            <strong>Células Procariontes</strong>: Las células procariontes son las que componen organismos
+                            unicelulares, como las bacterias y las arqueas. Estas células presentan las siguientes características:
+                            <!-- Image #4 -->
+                            <div id="image_4" class="card card-section my-3">
+                                @{
+                                    string image_4 = Url.Content("~/images/partes_de_la_celula_procariota.jpg");
+                                }
+                                <img src="@image_4" alt="Célula Procariontes." class="card-img-top">
+                                <div class="card-body">
+                                    <p class="card-text">
+                                        <i>Célula Procariontes.</i>
+                                    </p>
+                                    <a href="@image_4" target="_blank">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#212529" class="bi bi-search" viewBox="0 0 16 16">
+                                            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                            <ul>
+                                <li>
+                                    <strong>Tamaño</strong>: Son mucho más pequeñas que las células eucariontes.
+                                </li>
+                                <li>
+                                    <strong>Núcleo</strong>: No tienen un núcleo definido; el material genético (ADN) está disperso en el citoplasma.
+                                </li>
+                                <li>
+                                    <strong>Organelos</strong>: Carecen de organelos rodeados por membranas, como mitocondrias o cloroplastos.
+                                </li>
+                                <li>
+                                    <strong>Pared Celular</strong>: Todas las células procariontes están rodeadas por una pared celular rígida, que les da soporte y protección.
+                                </li>
+                                <li>
+                                    <strong>Reino</strong>: Los procariontes pertenecen a los dominios Bacteria y Archaea.
+                                </li>
+                            </ul>
+                        </li>
+                        <li id="CélulasEucariontes" class="item-content">
+                            <strong>Células Eucariontes</strong>: Las células eucariontes forman parte de organismos más complejos,
+                            como plantas, animales, hongos y protistas. Estas células tienen las siguientes características:
+                            <!-- Image #5 -->
+                            <div id="image_5" class="card card-section my-3">
+                                @{
+                                    string image_5 = Url.Content("~/images/LA-CELULA-Y-SUS-PARTES.webp");
+                                }
+                                <img src="@image_5" alt="Células Eucariontes." class="card-img-top">
+                                <div class="card-body">
+                                    <p class="card-text">
+                                        <i>Células Eucariontes.</i>
+                                    </p>
+                                    <a href="@image_5" target="_blank">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#212529" class="bi bi-search" viewBox="0 0 16 16">
+                                            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                            <ul>
+                                <li>
+                                    <strong>Tamaño</strong>: Son más grandes que las células procariontes.
+                                </li>
+                                <li>
+                                    <strong>Núcleo</strong>: Tienen un núcleo definido, donde se encuentra el material genético
+                                    (ADN), protegido por una envoltura nuclear.
+                                </li>
+                                <li>
+                                    <strong>Organelos</strong>: Poseen varios organelos rodeados por membranas, como mitocondrias,
+                                    cloroplastos (en plantas) y el retículo endoplasmático.
+                                </li>
+                                <li>
+                                    <strong>Pared Celular</strong>: Algunas células eucariontes, como las de las plantas y hongos,
+                                    tienen una pared celular, pero las células animales no.
+                                </li>
+                                <li>
+                                    <strong>Reino</strong>: Los organismos compuestos por células eucariontes forman parte del reino Eucariota.
+                                </li>
+                            </ul>
+                        </li>
+                    </ol>
+                    <div id="ResumenDeDiferencias" class="item-content">
+                        <table class="table table-bordered table-sm caption-top">
+                            <caption>Resumen de Diferencias</caption>
+                            <thead class="table-dark" style="font-size: 14px;">
+                                <tr>
+                                    <th>Característica</th>
+                                    <th>Células Procariontes</th>
+                                    <th>Células Eucariontes</th>
+                                </tr>
+                            </thead>
+                            <tbody style="font-size: 14px;">
+                                <tr>
+                                    <td>Tamaño</td>
+                                    <td>Pequeñas</td>
+                                    <td>Más grandes</td>
+                                </tr>
+                                <tr>
+                                    <td>Núcleo</td>
+                                    <td>No tienen núcleo definido</td>
+                                    <td>Núcleo definido</td>
+                                </tr>
+                                <tr>
+                                    <td>Organelos</td>
+                                    <td>No tienen organelos</td>
+                                    <td>Tienen organelos (como mitocondrias)</td>
+                                </tr>
+                                <tr>
+                                    <td>Pared celular</td>
+                                    <td>Siempre presente</td>
+                                    <td>Presente en plantas y hongos, pero no en animales</td>
+                                </tr>
+                                <tr>
+                                    <td>Reinos</td>
+                                    <td>Bacteria y Archaea</td>
+                                    <td>Eucariota</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <!-- Item Content #5 -->
+                <div id="Conclusión">
+                    <!-- Title -->
+                    <h4>Conclusión</h4>
+                    <!-- Text -->
+                    <p>
+                        Las células, aunque microscópicas, son fundamentales para la vida, y sus
+                        estructuras y funciones varían según su tipo y especialización. Desde la
+                        producción de sustancias hasta la conducción de impulsos eléctricos, cada
+                        célula juega un papel clave en el mantenimiento de las funciones vitales del
+                        organismo. Además, la distinción entre células procariontes y eucariontes resalta
+                        la diversidad en la organización celular entre los diferentes reinos biológicos.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="col-12 col-md-4 col-lg-3 col-xl-3 p-0">
+        <aside class="my-2">
+            <!-- Aside Title -->
+            <strong class="h6 my-2 ms-2">Pon a prueba tu conocimiento</strong>
+            <hr class="my-2 ms-2 me-4" />
+            <!-- Aside Content -->
+            <div class="aside-content px-4 mb-2">
+                <!-- Aside Form -->
+                <form id="aside-form-lacelula" enctype="multipart/form-data">
+                    <!-- Order List -->
+                    <ol class="m-0 ps-3">
+                        <!-- Pregunta #1 -->
+                        <li>
+                            <!-- Pregunta -->
+                            <h6>¿Cuál es la parte de la célula que actúa como su “muralla” o “frontera”?</h6>
+                            <div class="input-group input-group-column">
+                                <!-- Option #1 -->
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="question1" id="question1-option1" value="a">
+                                    <label class="form-check-label" for="question1-option1">
+                                        A) Núcleo
+                                    </label>
+                                </div>
+                                <!-- Option #2 -->
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="question1" id="question1-option2" value="b">
+                                    <label class="form-check-label" for="question1-option2">
+                                        B) Citoplasma
+                                    </label>
+                                </div>
+                                <!-- Option #3 -->
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="question1" id="question1-option3" value="c">
+                                    <label class="form-check-label" for="question1-option3">
+                                        C) Membrana celular
+                                    </label>
+                                </div>
+                                <!-- Option #4 -->
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="question1" id="question1-option4" value="d">
+                                    <label class="form-check-label" for="question1-option4">
+                                        D) Mitocondrias
+                                    </label>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- Pregunta #2 -->
+                        <li>
+                            <h6>¿Cuál es la función principal de las mitocondrias en la célula?</h6>
+                            <div class="input-group input-group-column">
+                                <!-- Option #1 -->
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="question2" id="question2-option1" value="a">
+                                    <label class="form-check-label" for="question2-option1">
+                                        A) Controlar la entrada y salida de sustancias
+                                    </label>
+                                </div>
+                                <!-- Option #2 -->
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="question2" id="question2-option2" value="b">
+                                    <label class="form-check-label" for="question2-option2">
+                                        B) Fabricar proteínas
+                                    </label>
+                                </div>
+                                <!-- Option #3 -->
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="question2" id="question2-option3" value="c">
+                                    <label class="form-check-label" for="question2-option3">
+                                        C) Eliminar desechos
+                                    </label>
+                                </div>
+                                <!-- Option #4 -->
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="question2" id="question2-option4" value="d">
+                                    <label class="form-check-label" for="question2-option4">
+                                        D) Producir energía
+                                    </label>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- Pregunta #3 -->
+                        <li>
+                            <!-- Pregunta -->
+                            <h6>¿Cómo se llama la parte de la célula que contiene toda la información importante, como el ADN?</h6>
+                            <div class="input-group input-group-column">
+                                <!-- Option #1 -->
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="question3" id="question3-option1" value="a">
+                                    <label class="form-check-label" for="question3-option1">
+                                        A) Núcleo
+                                    </label>
+                                </div>
+                                <!-- Option #2 -->
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="question3" id="question3-option2" value="b">
+                                    <label class="form-check-label" for="question3-option2">
+                                        B) Aparato de Golgi
+                                    </label>
+                                </div>
+                                <!-- Option #3 -->
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="question3" id="question3-option3" value="c">
+                                    <label class="form-check-label" for="question3-option3">
+                                        C) Lisosomas
+                                    </label>
+                                </div>
+                                <!-- Option #4 -->
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="question3" id="question3-option4" value="d">
+                                    <label class="form-check-label" for="question3-option4">
+                                        D) Vacuolas
+                                    </label>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- Pregunta #4 -->
+                        <li>
+                            <!-- Pregunta -->
+                            <h6>¿Cuál de los siguientes es un tipo de célula del sistema inmunológico?</h6>
+                            <div class="input-group input-group-column">
+                                <!-- Option #1 -->
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="question4" id="question4-option1" value="a">
+                                    <label class="form-check-label" for="question4-option1">
+                                        A) Neurona
+                                    </label>
+                                </div>
+                                <!-- Option #2 -->
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="question4" id="question4-option2" value="b">
+                                    <label class="form-check-label" for="question4-option2">
+                                        B) Célula muscular
+                                    </label>
+                                </div>
+                                <!-- Option #3 -->
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="question4" id="question4-option3" value="c">
+                                    <label class="form-check-label" for="question4-option3">
+                                        C) Glóbulo blanco
+                                    </label>
+                                </div>
+                                <!-- Option #4 -->
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="question4" id="question4-option4" value="d">
+                                    <label class="form-check-label" for="question4-option4">
+                                        D) Célula epitelial
+                                    </label>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- Pregunta #5 -->
+                        <li>
+                            <!-- Pregunta -->
+                            <h6>¿Qué tipo de células tienen un núcleo definido y organelos rodeados por membranas?</h6>
+                            <div class="input-group input-group-column">
+                                <!-- Option #1 -->
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="question5" id="question5-option1" value="a">
+                                    <label class="form-check-label" for="question5-option1">
+                                        A) Células eucariontes
+                                    </label>
+                                </div>
+                                <!-- Option #2 -->
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="question5" id="question5-option2" value="b">
+                                    <label class="form-check-label" for="question5-option2">
+                                        B) Células sin núcleo
+                                    </label>
+                                </div>
+                                <!-- Option #3 -->
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="question5" id="question5-option3" value="c">
+                                    <label class="form-check-label" for="question5-option3">
+                                        C) Células inmunológicas
+                                    </label>
+                                </div>
+                                <!-- Option #4 -->
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="question5" id="question5-option4" value="d">
+                                    <label class="form-check-label" for="question5-option4">
+                                        D) Células procariontes
+                                    </label>
+                                </div>
+                            </div>
+                        </li>
+                    </ol>
+                </form>
+            </div>
+            <!-- Aside Test Button -->
+            <div class="d-grid gap-2 mx-3">
+                <button id="aside-submit-btn" class="btn btn-outline-success" type="button" form="aside-form-lacelula">Evaluar</button>
+            </div>
+        </aside>
+    </div>
+</div>
+
+<script>
+    // Variables globales para los IDs y clases
+    const ID_FORM = 'aside-form-lacelula';
+    const ID_SUBMIT_BTN = 'aside-submit-btn';
+    const ID_ALERT_TEST = 'alert-test';
+    const ID_ALERT_TEST_RESPONSE = 'alert-test-response';
+    const ID_ALERT_CLOSE_BTN = 'alert-test-btn-close';
+
+    const CLASS_ALERT_SUCCESS = 'alert-success';
+    const CLASS_ALERT_DANGER = 'alert-danger';
+    const CLASS_D_NONE = 'd-none';
+    const CLASS_SHOW = 'show';
+
+    // Variable para controlar si ya se ha evaluado
+    let hasEvaluated = false;
+    
+    document.addEventListener('DOMContentLoaded', function () {
+        // Función para evaluar respuestas
+        document.getElementById(ID_SUBMIT_BTN).addEventListener('click', function (event) {
+            if (hasEvaluated) return; // Evita que se evalúe más de una vez
+
+            event.preventDefault(); // Evita refrescar la página
+
+            // Obtener el formulario
+            const form = document.getElementById(ID_FORM);
+            const formData = new FormData(form);
+
+            // Enviar datos al servidor
+            fetch('/Quinto/LaCelulaTest/', {
+                method: 'POST',
+                body: formData
+            })
+                .then(response => response.json()) // Procesar la respuesta del servidor
+                .then(data => {
+                    console.log(data.mensaje);
+
+                    // Respuestas correctas desde el servidor
+                    const correctAnswers = {
+                        'question1': data.question1, 'question2': data.question2,
+                        'question3': data.question3, 'question4': data.question4,
+                        'question5': data.question5,
+                    };
+
+                    // Verificar respuestas del usuario
+                    for (const question in correctAnswers) {
+                        const radios = document.getElementsByName(question);
+
+                        radios.forEach(radio => {
+                            const label = document.querySelector(`label[for="${radio.id}"]`);
+                            if (radio.checked) {
+                                label.style.color = radio.value === correctAnswers[question] ? 'green' : 'red';
+                            }
+                        });
+                    }
+
+                    // Insertar el mensaje devuelto por el servidor en el div de alerta
+                    const alertTest = document.getElementById(ID_ALERT_TEST);
+                    const testResponse = document.getElementById(ID_ALERT_TEST_RESPONSE);
+                    testResponse.textContent = data.mensaje;
+
+                    // Asignar clase a la alerta según aprobado o no
+                    alertTest.classList.remove(CLASS_ALERT_SUCCESS, CLASS_ALERT_DANGER);
+                    alertTest.classList.add(data.aprobado ? CLASS_ALERT_SUCCESS : CLASS_ALERT_DANGER);
+
+                    // Mostrar la alerta
+                    alertTest.classList.remove(CLASS_D_NONE);
+                    alertTest.classList.add(CLASS_SHOW);
+                })
+                .catch(error => {
+                    console.error('Error al enviar el formulario:', error);
+                    const alertTest = document.getElementById(ID_ALERT_TEST);
+                    const testResponse = document.getElementById(ID_ALERT_TEST_RESPONSE);
+                    testResponse.textContent = "Error al procesar la solicitud. Intente de nuevo.";
+                    alertTest.classList.remove(CLASS_D_NONE);
+                    alertTest.classList.add(CLASS_ALERT_DANGER, CLASS_SHOW);
+                });
+
+            // Marcar como evaluado y deshabilitar el botón
+            hasEvaluated = true;
+            this.disabled = true;
+        });
+
+        // Cerrar la alerta y resetear el formulario
+        document.getElementById(ID_ALERT_CLOSE_BTN).addEventListener('click', function () {
+            const alertTest = document.getElementById(ID_ALERT_TEST);
+            alertTest.classList.remove(CLASS_SHOW);
+            alertTest.classList.add(CLASS_D_NONE);
+
+            // Reinicia el formulario
+            const form = document.getElementById(ID_FORM);
+            form.reset();
+
+            // Reiniciar color de los labels
+            const labels = form.querySelectorAll('label');
+            labels.forEach(label => label.style.color = '');
+
+            // Habilitar botón y resetear estado
+            const testBtn = document.getElementById(ID_SUBMIT_BTN);
+            testBtn.disabled = false;
+            hasEvaluated = false;
+        });
+    });
+</script>

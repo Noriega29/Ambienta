@@ -1,0 +1,715 @@
+﻿@{
+    ViewData["Title"] = "Quinto - Los Ecosistemas y el Medio Ambiente";
+}
+
+<style>
+    #image_1, #image_2, #image_3, #image_4, #image_5 {
+        margin: 0px;
+        margin-bottom: 8px;
+    }
+
+    @@media (min-width: 576px) {
+        #image_1, #image_2, #image_3, #image_4, #image_5 {
+            margin: 0px;
+            margin-left: 14px;
+            float: right;
+        }
+
+        #image_1 img {
+            height: 10rem;
+        }
+
+        #image_2 img, #image_3 img {
+            height: 10rem;
+        }
+
+        #image_4 img, #image_5 img {
+            height: 15rem;
+        }
+    }
+
+    @@media (min-width: 768px) {
+        #image_1, #image_2, #image_3, #image_4, #image_5 {
+            margin: 0px;
+            margin-left: 14px;
+            float: right;
+        }
+
+        #image_1 img {
+            height: 6rem;
+        }
+
+        #image_2 img, #image_3 img {
+            height: 8rem;
+        }
+
+        #image_4 img, #image_5 img {
+            height: 12rem;
+        }
+    }
+
+    @@media (min-width: 992px) {
+        #image_1, #image_2, #image_3, #image_4, #image_5 {
+            margin: 0px;
+            margin-left: 14px;
+            float: right;
+        }
+
+        #image_1 img {
+            height: 8rem;
+        }
+
+        #image_2 img, #image_3 img {
+            height: 10rem;
+        }
+
+        #image_4 img, #image_5 img {
+            height: 12rem;
+        }
+    }
+</style>
+
+<div class="row">
+    <div class="d-none d-lg-block col-lg-3 col-xl-3 border-end">
+        <nav id="navbar-example3" class="h-100 flex-column align-items-stretch">
+            <nav class="nav nav-pills flex-column mt-2">
+                <!-- Nav Guia Title -->
+                <strong class="h6 my-2 ms-3">Contenido</strong>
+                <hr class="my-2 ms-3 me-4" />
+                <!-- Nav Guia Items -->
+                <ul class="nav-guide m-0 p-0">
+                    <!-- Item #1 -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#QuéEsUnEcosistema">¿Qué es un ecosistema?</a>
+                    </li>
+                    <!-- Item #2 -->
+                    <li class="nav-item">
+                        <a class="nav-link toggle-btn" href="#PartesDeUnEcosistema">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+                                <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-up-fill" viewBox="0 0 16 16" style="display:none">
+                                <path d="m7.247 4.86-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z" />
+                            </svg>
+                            Partes de un Ecosistema
+                        </a>
+                        <!-- Sub-Items -->
+                        <ul class="nav sublista flex-column ms-3">
+                            <!-- Sub-Item #1 -->
+                            <li class="nav-item">
+                                <a class="nav-link my-1" href="#SeresVivos">Seres vivos</a>
+                            </li>
+                            <!-- Sub-Item #2 -->
+                            <li class="nav-item">
+                                <a class="nav-link my-1" href="#ElementosNoVivos">Elementos no vivos</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- Item #3 -->
+                    <li class="nav-item">
+                        <a class="nav-link toggle-btn" href="#TiposDeEcosistemas">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+                                <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-up-fill" viewBox="0 0 16 16" style="display:none">
+                                <path d="m7.247 4.86-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z" />
+                            </svg>
+                            Tipos de Ecosistemas
+                        </a>
+                        <!-- Sub-Items -->
+                        <ul class="nav sublista flex-column ms-3">
+                            <!-- Sub-Item #1 -->
+                            <li class="nav-item">
+                                <a class="nav-link my-1" href="#EcosistemasTerrestres">Ecosistemas terrestres</a>
+                            </li>
+                            <!-- Sub-Item #2 -->
+                            <li class="nav-item">
+                                <a class="nav-link my-1" href="#EcosistemasAcuáticos">Ecosistemas acuáticos</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- Item #4 -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#ElMedioAmbiente">¿Qué es el medio ambiente?</a>
+                    </li>
+                    <!-- Item #5 -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#ProblemasDelMedioAmbiente">Problemas del medio ambiente</a>
+                    </li>
+                    <!-- Item #6 -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#CómoPodemosAyudar">¿Cómo podemos ayudar?</a>
+                    </li>
+                    <!-- Item #7 -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Conclusión">Conclusión</a>
+                    </li>
+                </ul>
+            </nav>
+        </nav>
+    </div>
+    <div class="col-12 col-md-8 col-lg-6 col-xl-6 border-end p-0">
+        <!-- Section #1 -->
+        <section>
+            <!-- Title -->
+            <div class="section-title">
+                <h1>Los Ecosistemas y el Medio Ambiente</h1>
+                <hr />
+            </div>
+            <!-- Section Body -->
+            <div class="section-content scrollspy-example-3" data-bs-spy="scroll" data-bs-target="#navbar-example3" data-bs-root-margin="0px 0px -33%" data-bs-smooth-scroll="true" tabindex="0">
+                <!-- Item Content #1 -->
+                <div id="QuéEsUnEcosistema" class="item-content mb-3">
+                    <!-- Title -->
+                    <h4>¿Qué es un Ecosistema?</h4>
+                    <!-- Image #1 -->
+                    <div id="image_1" class="card card-section">
+                        @{
+                            string image_1 = Url.Content("~/images/Ecosistema.webp");
+                        }
+                        <img src="@image_1" alt="Ecosistema." class="card-img-top">
+                        <div class="card-body">
+                            <p class="card-text">
+                                <i>Ecosistema.</i>
+                            </p>
+                            <a href="@image_1" target="_blank">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#212529" class="bi bi-search" viewBox="0 0 16 16">
+                                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Text -->
+                    <p>
+                        Un <strong>ecosistema</strong> es un lugar donde los seres vivos (como los animales, plantas y
+                        microorganismos) interactúan entre ellos y con los elementos no vivos (como el
+                        agua, el aire y la tierra). Todos los seres vivos en un ecosistema dependen unos de
+                        otros para sobrevivir.
+                    </p>
+                    <p>
+                        Imagina un bosque: los árboles, los insectos, los pájaros y los animales como los
+                        ciervos viven allí. Todos estos seres vivos forman parte de ese ecosistema, y
+                        también el río, las rocas y la luz del sol que los alimenta.
+                    </p>
+                </div>
+                <!-- Item Content #2 -->
+                <div id="PartesDeUnEcosistema" class="item-content mb-3">
+                    <!-- Title -->
+                    <h4>Partes de un Ecosistema</h4>
+                    <!-- Text -->
+                    <p>
+                        Un ecosistema tiene dos partes importantes:
+                    </p>
+                    <ol>
+                        <!-- SubItem #1 -->
+                        <li id="SeresVivos" class="item-content">
+                            <strong>Seres vivos (o bióticos)</strong>: Son todos los animales, plantas y
+                            microorganismos que viven en el ecosistema.
+                            <ul>
+                                <li><strong>Plantas</strong></li>: Producen su propia comida usando la luz del sol
+                                (fotosíntesis).
+                                <li><strong>Animales</strong></li>s: Se alimentan de plantas o de otros animales.
+                                <li><strong>Microorganismos</strong></li>s: Son organismos tan pequeños que no podemos
+                                verlos, pero ayudan a descomponer las plantas y animales cuando
+                                mueren.
+                            </ul>
+                        </li>
+                        <!-- SubItem #2 -->
+                        <li id="ElementosNoVivos" class="item-content">
+                            <strong>Elementos no vivos (o abióticos)</strong>): Son las cosas que no están vivas, pero
+                            que son importantes para que los seres vivos puedan sobrevivir.
+                            <ul>
+                                <li><strong>Agua</strong></li>a: Es esencial para la vida. Los animales beben agua y las
+                                plantas la absorben por las raíces.
+                                <li><strong>Aire</strong></li>: Todos necesitamos aire para respirar. Los árboles producen
+                                oxígeno, que es parte del aire que respiramos.
+                                <li><strong>Tierra</strong></li>: Es donde crecen las plantas y viven muchos animales.
+                                <li><strong>Luz solar</strong></li>: Las plantas la necesitan para hacer su comida, y los
+                                animales dependen de las plantas.
+                            </ul>
+                        </li>
+                    </ol>
+                </div>
+                <!-- Item Content #3 -->
+                <div id="TiposDeEcosistemas" class="item-content mb-3">
+                    <!-- Title -->
+                    <h4>Tipos de Ecosistemas</h4>
+                    <!-- Text -->
+                    <p>
+                        Existen muchos tipos de ecosistemas en nuestro planeta, y cada uno tiene sus
+                        propias características y seres vivos. Algunos ejemplos son:
+                    </p>
+                    <ol>
+                        <!-- SubItem #1 -->
+                        <li id="EcosistemasTerrestres" class="item-content">
+                            <strong>Ecosistemas Terrestres</strong>: Se encuentran en la tierra.
+                            <!-- Image #2 -->
+                            <div id="image_2" class="card card-section my-3">
+                                @{
+                                    string image_2 = Url.Content("~/images/ecosistema terrestre.png");
+                                }
+                                <img src="@image_2" alt="Ecosistema Terrestre." class="card-img-top">
+                                <div class="card-body">
+                                    <p class="card-text">
+                                        <i>Ecosistema terrestre.</i>
+                                    </p>
+                                    <a href="@image_2" target="_blank">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#212529" class="bi bi-search" viewBox="0 0 16 16">
+                                            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                            <ul>
+                                <li><strong>Bosques</strong></li>: Tienen muchos árboles, animales como pájaros y
+                                mamíferos, y suelo rico.
+                                <li><strong>Desiertos</strong></li>: Son muy secos, tienen pocas plantas y animales como
+                                serpientes y camellos, que están adaptados para vivir con poca
+                                agua.
+                                <li><strong>Praderas</strong></li>: Son llanuras con mucha hierba y animales herbívoros
+                                como las cebras o las vacas.
+                            </ul>
+                        </li>
+                        <!-- SubItem #2 -->
+                        <li id="EcosistemasAcuáticos" class="item-content">
+                            <strong>Ecosistemas Acuáticos</strong>: Se encuentran en el agua.
+                            <!-- Image #3 -->
+                            <div id="image_3" class="card card-section my-3">
+                                @{
+                                    string image_3 = Url.Content("~/images/ecosistema acuático.png");
+                                }
+                                <img src="@image_3" alt="Ecosistema Acuático." class="card-img-top">
+                                <div class="card-body">
+                                    <p class="card-text">
+                                        <i>Ecosistema acuático.</i>
+                                    </p>
+                                    <a href="@image_3" target="_blank">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#212529" class="bi bi-search" viewBox="0 0 16 16">
+                                            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                            <ul>
+                                <li><strong>Ríos y Lagos</strong></li>: Aquí viven peces, ranas y otros animales que
+                                dependen del agua dulce.
+                                <li><strong>Océanos</strong></li>: Son ecosistemas enormes y muy profundos, donde viven
+                                animales como los delfines, peces y ballenas.
+                            </ul>
+                        </li>
+                    </ol>
+                </div>
+                <!-- Item Content #4 -->
+                <div id="ElMedioAmbiente" class="item-content mb-3">
+                    <!-- Title -->
+                    <h4>¿Qué es El Medio Ambiente?</h4>
+                    <!-- Text -->
+                    <p>
+                        El <strong>medio ambiente</strong> es todo lo que nos rodea: los árboles, el aire, el agua, el suelo,
+                        los animales y las plantas. Es el hogar de todos los seres vivos, incluyéndonos a
+                        nosotros, los seres humanos. Para que podamos vivir de manera saludable, es
+                        muy importante <strong>cuidar el medio ambiente</strong>.
+                    </p>
+                </div>
+                <!-- Item Content #5 -->
+                <div id="ProblemasDelMedioAmbiente" class="item-content mb-3">
+                    <!-- Title -->
+                    <h4>Problemas del Medio Ambiente</h4>
+                    <!-- Image #4 -->
+                    <div id="image_4" class="card card-section">
+                        @{
+                            string image_4 = Url.Content("~/images/tala de árboles en estilo low poly.png");
+                        }
+                        <img src="@image_4" alt="Deforestación." class="card-img-top">
+                        <div class="card-body">
+                            <p class="card-text">
+                                <i>Deforestación.</i>
+                            </p>
+                            <a href="@image_4" target="_blank">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#212529" class="bi bi-search" viewBox="0 0 16 16">
+                                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Text -->
+                    <p>
+                        Hoy en día, el medio ambiente está enfrentando algunos problemas debido a las
+                        acciones de los seres humanos. Algunos de estos problemas son:
+                    </p>
+                    <ul>
+                        <li>
+                            <strong>Contaminación</strong>: La contaminación del aire, el agua y la tierra está
+                            afectando la salud de los seres vivos.
+                        </li>
+                        <li>
+                            <strong>Deforestación</strong>: Cuando talamos muchos árboles, estamos destruyendo
+                            bosques, que son el hogar de miles de animales y plantas.
+                        </li>
+                        <li>
+                            <strong>Cambio climático</strong>: Las actividades humanas, como quemar combustibles
+                            fósiles, están causando que la temperatura del planeta aumente, lo que
+                            puede afectar a todos los ecosistemas.
+                        </li>
+                    </ul>
+                </div>
+                <!-- Item Content #6 -->
+                <div id="CómoPodemosAyudar" class="item-content mb-3">
+                    <!-- Title -->
+                    <h4>¿Cómo Podemos Ayudar?</h4>
+                    <!-- Image #5 -->
+                    <div id="image_5" class="card card-section">
+                        @{
+                            string image_5 = Url.Content("~/images/Plantar árboles.png");
+                        }
+                        <img src="@image_5" alt="Reforestación." class="card-img-top">
+                        <div class="card-body">
+                            <p class="card-text">
+                                <i>Reforestación.</i>
+                            </p>
+                            <a href="@image_5" target="_blank">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#212529" class="bi bi-search" viewBox="0 0 16 16">
+                                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Text -->
+                    <p>
+                        Cuidar el medio ambiente es tarea de todos, y hay muchas cosas que podemos
+                        hacer para ayudar:
+                    </p>
+                    <ol>
+                        <li>
+                            <strong>Reciclar</strong>: Separar la basura y reciclar papel, plástico y vidrio ayuda a
+                            reducir la contaminación.
+                        </li>
+                        <li>
+                            <strong>Ahorrar agua y energía</strong>: Usar menos agua y apagar las luces cuando no las
+                            necesitemos ayuda a proteger el planeta.
+                        </li>
+                        <li>
+                            <strong>Plantar árboles</strong>: Los árboles nos dan oxígeno y ayudan a limpiar el aire.
+                        </li>
+                        <li>
+                            <strong>No tirar basura en la naturaleza</strong>: Cuando visitamos parques o playas,
+                            debemos asegurarnos de no dejar basura.
+                        </li>
+                    </ol>
+                </div>
+                <!-- Item Content #7 -->
+                <div id="Conclusión" class="item-content mb-3">
+                    <!-- Title -->
+                    <h4>Conclusión</h4>
+                    <!-- Text -->
+                    <p class="m-0">
+                        Un ecosistema es como una gran comunidad donde todos los seres vivos, junto
+                        con los elementos no vivos, trabajan juntos para mantener el equilibrio. Nuestro
+                        planeta está lleno de ecosistemas diferentes, y todos son importantes. Cuidar el
+                        medio ambiente es esencial para que estos ecosistemas puedan seguir existiendo
+                        y para que nosotros, los humanos, podamos vivir en un mundo saludable y lleno
+                        de vida.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="col-12 col-md-4 col-lg-3 col-xl-3 p-0">
+        <aside class="my-2">
+            <!-- Aside Title -->
+            <strong class="h6 my-2 ms-2">Pon a prueba tu conocimiento</strong>
+            <hr class="my-2 ms-2 me-4" />
+            <!-- Aside Content -->
+            <div class="aside-content px-2 mb-2">
+                <!-- Aside Form -->
+                <form id="aside-form-ecosistemasymedioambiente" enctype="multipart/form-data">
+                    <!-- Order List -->
+                    <ol class="m-0 ps-3">
+                        <!-- Pregunta #1 -->
+                        <li>
+                            <!-- Pregunta -->
+                            <h6>¿Qué es un ecosistema?</h6>
+                            <div class="input-group input-group-column">
+                                <!-- Option #1 -->
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="question1" id="question1-option1" value="a">
+                                    <label class="form-check-label" for="question1-option1">
+                                        A) Un lugar donde solo viven animales
+                                    </label>
+                                </div>
+                                <!-- Option #2 -->
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="question1" id="question1-option2" value="b">
+                                    <label class="form-check-label" for="question1-option2">
+                                        B) Un lugar donde los seres vivos interactúan entre ellos y con elementos no vivos
+                                    </label>
+                                </div>
+                                <!-- Option #3 -->
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="question1" id="question1-option3" value="c">
+                                    <label class="form-check-label" for="question1-option3">
+                                        C) Un lugar sin seres vivos ni plantas
+                                    </label>
+                                </div>
+                                <!-- Option #4 -->
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="question1" id="question1-option4" value="d">
+                                    <label class="form-check-label" for="question1-option4">
+                                        D) Una zona donde hay solo árboles y plantas
+                                    </label>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- Pregunta #2 -->
+                        <li>
+                            <h6>¿Cuál de los siguientes es un elemento abiótico en un ecosistema?</h6>
+                            <div class="input-group input-group-column">
+                                <!-- Option #1 -->
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="question2" id="question2-option1" value="a">
+                                    <label class="form-check-label" for="question2-option1">
+                                        A) Animales
+                                    </label>
+                                </div>
+                                <!-- Option #2 -->
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="question2" id="question2-option2" value="b">
+                                    <label class="form-check-label" for="question2-option2">
+                                        B) Plantas
+                                    </label>
+                                </div>
+                                <!-- Option #3 -->
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="question2" id="question2-option3" value="c">
+                                    <label class="form-check-label" for="question2-option3">
+                                        C) Aire
+                                    </label>
+                                </div>
+                                <!-- Option #4 -->
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="question2" id="question2-option4" value="d">
+                                    <label class="form-check-label" for="question2-option4">
+                                        D) Microorganismos
+                                    </label>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- Pregunta #3 -->
+                        <li>
+                            <!-- Pregunta -->
+                            <h6>¿Cuál de estos ecosistemas es acuático?</h6>
+                            <div class="input-group input-group-column">
+                                <!-- Option #1 -->
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="question3" id="question3-option1" value="a">
+                                    <label class="form-check-label" for="question3-option1">
+                                        A) Desierto
+                                    </label>
+                                </div>
+                                <!-- Option #2 -->
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="question3" id="question3-option2" value="b">
+                                    <label class="form-check-label" for="question3-option2">
+                                        B) Pradera
+                                    </label>
+                                </div>
+                                <!-- Option #3 -->
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="question3" id="question3-option3" value="c">
+                                    <label class="form-check-label" for="question3-option3">
+                                        C) Bosque
+                                    </label>
+                                </div>
+                                <!-- Option #4 -->
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="question3" id="question3-option4" value="d">
+                                    <label class="form-check-label" for="question3-option4">
+                                        D) Lago
+                                    </label>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- Pregunta #4 -->
+                        <li>
+                            <!-- Pregunta -->
+                            <h6>¿Qué problema ambiental ocurre cuando talamos muchos árboles?</h6>
+                            <div class="input-group input-group-column">
+                                <!-- Option #1 -->
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="question4" id="question4-option1" value="a">
+                                    <label class="form-check-label" for="question4-option1">
+                                        A) Cambio climático
+                                    </label>
+                                </div>
+                                <!-- Option #2 -->
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="question4" id="question4-option2" value="b">
+                                    <label class="form-check-label" for="question4-option2">
+                                        B) Reciclaje
+                                    </label>
+                                </div>
+                                <!-- Option #3 -->
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="question4" id="question4-option3" value="c">
+                                    <label class="form-check-label" for="question4-option3">
+                                        C) Contaminación
+                                    </label>
+                                </div>
+                                <!-- Option #4 -->
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="question4" id="question4-option4" value="d">
+                                    <label class="form-check-label" for="question4-option4">
+                                        D) Deforestación
+                                    </label>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- Pregunta #5 -->
+                        <li>
+                            <!-- Pregunta -->
+                            <h6>¿Qué podemos hacer para ayudar a cuidar el medio ambiente?</h6>
+                            <div class="input-group input-group-column">
+                                <!-- Option #1 -->
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="question5" id="question5-option1" value="a">
+                                    <label class="form-check-label" for="question5-option1">
+                                        A) Usar mucha agua sin control
+                                    </label>
+                                </div>
+                                <!-- Option #2 -->
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="question5" id="question5-option2" value="b">
+                                    <label class="form-check-label" for="question5-option2">
+                                        B) Tirar basura en parques
+                                    </label>
+                                </div>
+                                <!-- Option #3 -->
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="question5" id="question5-option3" value="c">
+                                    <label class="form-check-label" for="question5-option3">
+                                        C) Apagar las luces cuando no las necesitemos
+                                    </label>
+                                </div>
+                                <!-- Option #4 -->
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="question5" id="question5-option4" value="d">
+                                    <label class="form-check-label" for="question5-option4">
+                                        D) Comprar más plástico
+                                    </label>
+                                </div>
+                            </div>
+                        </li>
+                    </ol>
+                </form>
+            </div>
+            <!-- Aside Test Button -->
+            <div class="d-grid gap-2 mx-3">
+                <button id="aside-submit-btn" class="btn btn-outline-success" type="button" form="aside-form-ecosistemasymedioambiente">Evaluar</button>
+            </div>
+        </aside>
+    </div>
+</div>
+
+<script>
+    // Variables globales para los IDs y clases
+    const ID_FORM = 'aside-form-ecosistemasymedioambiente';
+    const ID_SUBMIT_BTN = 'aside-submit-btn';
+    const ID_ALERT_TEST = 'alert-test';
+    const ID_ALERT_TEST_RESPONSE = 'alert-test-response';
+    const ID_ALERT_CLOSE_BTN = 'alert-test-btn-close';
+
+    const CLASS_ALERT_SUCCESS = 'alert-success';
+    const CLASS_ALERT_DANGER = 'alert-danger';
+    const CLASS_D_NONE = 'd-none';
+    const CLASS_SHOW = 'show';
+
+    // Variable para controlar si ya se ha evaluado
+    let hasEvaluated = false;
+
+    document.addEventListener('DOMContentLoaded', function () {
+        // Función para evaluar respuestas
+        document.getElementById(ID_SUBMIT_BTN).addEventListener('click', function (event) {
+            if (hasEvaluated) return; // Evita que se evalúe más de una vez
+
+            event.preventDefault(); // Evita refrescar la página
+
+            // Obtener el formulario
+            const form = document.getElementById(ID_FORM);
+            const formData = new FormData(form);
+
+            // Enviar datos al servidor
+            fetch('/Quinto/LosEcosistemasYElMedioAmbienteTest/', {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => response.json()) // Procesar la respuesta del servidor
+            .then(data => {
+                console.log(data.mensaje);
+
+                // Respuestas correctas desde el servidor
+                const correctAnswers = {
+                    'question1': data.question1, 'question2': data.question2,
+                    'question3': data.question3, 'question4': data.question4,
+                    'question5': data.question5,
+                };
+
+                // Verificar respuestas del usuario
+                for (const question in correctAnswers) {
+                    const radios = document.getElementsByName(question);
+
+                    radios.forEach(radio => {
+                        const label = document.querySelector(`label[for="${radio.id}"]`);
+                        if (radio.checked) {
+                            label.style.color = radio.value === correctAnswers[question] ? 'green' : 'red';
+                        }
+                    });
+                }
+
+                // Insertar el mensaje devuelto por el servidor en el div de alerta
+                const alertTest = document.getElementById(ID_ALERT_TEST);
+                const testResponse = document.getElementById(ID_ALERT_TEST_RESPONSE);
+                testResponse.textContent = data.mensaje;
+
+                // Asignar clase a la alerta según aprobado o no
+                alertTest.classList.remove(CLASS_ALERT_SUCCESS, CLASS_ALERT_DANGER);
+                alertTest.classList.add(data.aprobado ? CLASS_ALERT_SUCCESS : CLASS_ALERT_DANGER);
+
+                // Mostrar la alerta
+                alertTest.classList.remove(CLASS_D_NONE);
+                alertTest.classList.add(CLASS_SHOW);
+            })
+            .catch(error => {
+                console.error('Error al enviar el formulario:', error);
+                const alertTest = document.getElementById(ID_ALERT_TEST);
+                const testResponse = document.getElementById(ID_ALERT_TEST_RESPONSE);
+                testResponse.textContent = "Error al procesar la solicitud. Intente de nuevo.";
+                alertTest.classList.remove(CLASS_D_NONE);
+                alertTest.classList.add(CLASS_ALERT_DANGER, CLASS_SHOW);
+            });
+
+            // Marcar como evaluado y deshabilitar el botón
+            hasEvaluated = true;
+            this.disabled = true;
+        });
+
+        // Cerrar la alerta y resetear el formulario
+        document.getElementById(ID_ALERT_CLOSE_BTN).addEventListener('click', function () {
+            const alertTest = document.getElementById(ID_ALERT_TEST);
+            alertTest.classList.remove(CLASS_SHOW);
+            alertTest.classList.add(CLASS_D_NONE);
+
+            // Reinicia el formulario
+            const form = document.getElementById(ID_FORM);
+            form.reset();
+
+            // Reiniciar color de los labels
+            const labels = form.querySelectorAll('label');
+            labels.forEach(label => label.style.color = '');
+
+            // Habilitar botón y resetear estado
+            const testBtn = document.getElementById(ID_SUBMIT_BTN);
+            testBtn.disabled = false;
+            hasEvaluated = false;
+        });
+    });
+</script>

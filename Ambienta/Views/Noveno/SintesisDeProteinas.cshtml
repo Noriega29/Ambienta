@@ -1,0 +1,777 @@
+﻿@{
+    ViewData["Title"] = "Noveno - Síntesis de Proteínas";
+}
+
+<style>
+    #image_1, #image_2, #image_3, #image_4 {
+        margin: 0px;
+        margin-bottom: 8px;
+    }
+
+    @@media (min-width: 576px) {
+        #image_1, #image_2, #image_3, #image_4 {
+            margin: 0px;
+            margin-left: 14px;
+            margin-bottom: 8px;
+            float: right;
+        }
+
+        #image_1 img {
+            height: 15rem;
+        }
+
+        #image_2 img {
+            height: 8rem;
+        }
+
+        #image_3 img {
+            height: 14rem;
+        }
+
+        #image_4 img {
+            height: 10rem;
+        }
+    }
+
+    @@media (min-width: 768px) {
+        #image_1, #image_2, #image_3, #image_4 {
+            margin: 0px;
+            margin-left: 14px;
+            margin-bottom: 8px;
+            float: right;
+        }
+
+        #image_1 img {
+            height: 12rem;
+        }
+
+        #image_2 img {
+            height: 6rem;
+        }
+
+        #image_3 img {
+            height: 10rem;
+        }
+
+        #image_4 img {
+            height: 8rem;
+        }
+    }
+
+    @@media (min-width: 992px) {
+        #image_1, #image_2, #image_3, #image_4 {
+            margin: 0px;
+            margin-left: 14px;
+            margin-bottom: 8px;
+            float: right;
+        }
+
+        #image_1 img {
+            height: 12rem;
+        }
+
+        #image_2 img {
+            height: 6rem;
+        }
+
+        #image_3 img {
+            height: 10rem;
+        }
+
+        #image_4 img {
+            height: 8rem;
+        }
+    }
+</style>
+
+<div class="row">
+    <div class="d-none d-lg-block col-lg-3 col-xl-3 border-end">
+        <nav id="navbar-example3" class="h-100 flex-column align-items-stretch">
+            <nav class="nav nav-pills flex-column mt-2">
+                <!-- Nav Guia Title -->
+                <strong class="h6 my-2 ms-3">Contenido</strong>
+                <hr class="my-2 ms-3 me-4" />
+                <!-- Nav Guia Items -->
+                <ul class="nav-guide m-0 p-0">
+                    <!-- Item #1 -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#sintesisdeproteinas">¿Qué es la síntesis de proteínas?</a>
+                    </li>
+                    <!-- Item #2 -->
+                    <li class="nav-item">
+                        <a class="nav-link toggle-btn" href="#etapas">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+                                <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-up-fill" viewBox="0 0 16 16" style="display:none">
+                                <path d="m7.247 4.86-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z" />
+                            </svg>
+                            Etapas de la síntesis de proteínas
+                        </a>
+                        <!-- Sub-Items -->
+                        <ul class="nav sublista flex-column ms-3">
+                            <!-- Sub-Item #1 -->
+                            <li class="nav-item">
+                                <a class="nav-link my-1" href="#iniciacion">Iniciación</a>
+                            </li>
+                            <!-- Sub-Item #2 -->
+                            <li class="nav-item">
+                                <a class="nav-link my-1" href="#elongacion">Elongación</a>
+                            </li>
+                            <!-- Sub-Item #3 -->
+                            <li class="nav-item">
+                                <a class="nav-link my-1" href="#terminacion">Terminación de la síntesis de proteínas</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </nav>
+    </div>
+    <div class="col-12 col-md-8 col-lg-6 col-xl-6 border-end p-0">
+        <!-- Section #1 -->
+        <section>
+            <!-- Title -->
+            <div class="section-title">
+                <h1>Síntesis de Proteínas</h1>
+                <hr />
+            </div>
+            <!-- Section Body -->
+            <div class="section-content scrollspy-example-3" data-bs-spy="scroll" data-bs-target="#navbar-example3" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" tabindex="0">
+                <!-- Item Content #1 -->
+                <div id="sintesisdeproteinas" class="item-content mb-3">
+                    <!-- Title -->
+                    <h4>¿Qué es la síntesis de proteínas?</h4>
+                    <!-- Image #1 -->
+                    <div id="image_1" class="card card-section">
+                        @{
+                            string image_1 = Url.Content("~/images/sintesis de proteinas.jpg");
+                        }
+                        <img src="@image_1" alt="Síntesis de Proteínas." class="card-img-top">
+                        <div class="card-body">
+                            <p class="card-text">
+                                <i>Síntesis de Proteínas.</i>
+                            </p>
+                            <a href="@image_1" target="_blank">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#212529" class="bi bi-search" viewBox="0 0 16 16">
+                                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Text -->
+                    <p>
+                        La síntesis de proteínas es el proceso en el cual las células construyen proteínas a
+                        partir de aminoácidos. Este proceso es fundamental para el funcionamiento celular y,
+                        por ende, esencial para todos los seres vivos. Es a través de este proceso que la
+                        información genética contenida en el ADN se convierte en proteínas, que son responsables
+                        de llevar a cabo diversas funciones dentro de la célula.
+                    </p>
+                    <!-- Text -->
+                    <p>
+                        El ribosoma, un organelo celular, es el encargado de ensamblar las proteínas. Durante la
+                        síntesis de proteínas, participan el ARN mensajero (ARNm), el ARN de transferencia (ARNt),
+                        los aminoácidos y algunas proteínas auxiliares. Este proceso es anabólico, lo que significa
+                        que construye macromoléculas a partir de unidades más pequeñas, en este caso, los aminoácidos.
+                        Por ejemplo, el colágeno es una proteína formada por más de 4000 aminoácidos.
+                    </p>
+                    <!-- Text -->
+                    <p>
+                        La síntesis de proteínas ocurre tanto en células eucariotas (como animales, plantas,
+                        hongos y protozoarios) como en células procariotas (como bacterias y arqueas).
+                        Sin embargo, existen ciertas diferencias entre estos tipos de células que han permitido
+                        desarrollar antibióticos para combatir infecciones bacterianas. Por ejemplo, antibióticos
+                        como los aminoglicósidos (gentamicina, amikacina y estreptomicina) y los macrólidos
+                        (eritromicina y azitromicina) se unen a los ribosomas bacterianos e impiden la síntesis
+                        de proteínas, destruyendo así las bacterias.
+                    </p>
+                    <!-- Text -->
+                    <p>
+                        La producción de proteínas es crucial para la creación y reparación de tejidos
+                        en el organismo. Cualquier problema en este proceso puede conducir a la aparición de enfermedades.
+                    </p>
+                </div>
+                <!-- Item Content #2 -->
+                <div id="etapas" class="item-content mb-3">
+                    <!-- Title -->
+                    <h4>Etapas de la síntesis de proteínas</h4>
+                    <!-- Text -->
+                    <p>
+                        Durante la síntesis de proteínas, la secuencia del ARNm se traduce en una secuencia
+                        de aminoácidos. Este proceso cíclico se divide en tres etapas: iniciación, elongación y terminación.
+                    </p>
+                </div>
+                <!-- Item Content #3 -->
+                <div id="iniciacion" class="item-content mb-3">
+                    <!-- Title -->
+                    <h4>Iniciación</h4>
+                    <!-- Image #2 -->
+                    <div id="image_2" class="card card-section">
+                        @{
+                            string image_2 = Url.Content("~/images/sintesis-de-proteinas-inicio.webp");
+                        }
+                        <img src="@image_2" alt="Iniciación." class="card-img-top">
+                        <div class="card-body">
+                            <p class="card-text">
+                                <i>Iniciación.</i>
+                            </p>
+                            <a href="@image_2" target="_blank">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#212529" class="bi bi-search" viewBox="0 0 16 16">
+                                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Text -->
+                    <p>
+                        La <strong>iniciación</strong> implica identificar el sitio exacto en la secuencia
+                        de nucleótidos del ARNm donde comenzará la traducción. La lectura del ARNm se realiza
+                        en grupos de tres nucleótidos, llamados codones, cada uno de los cuales corresponde a
+                        un aminoácido. El proceso de iniciación comienza con el ensamblaje del ribosoma sobre
+                        el ARNm en el codón AUG, que codifica para el aminoácido metionina, el primer aminoácido
+                        de la cadena proteica. El ARNt, unido a la metionina, se aparea con el codón AUG en el
+                        sitio P del ribosoma.
+                    </p>
+                </div>
+                <!-- Item Content #4 -->
+                <div id="elongacion" class="item-content mb-3">
+                    <!-- Title -->
+                    <h4>Elongación</h4>
+                    <!-- Image #3 -->
+                    <div id="image_3" class="card card-section">
+                        @{
+                            string image_3 = Url.Content("~/images/sintesis-de-proteinas-elongacion.webp");
+                        }
+                        <img src="@image_3" alt="Elongación." class="card-img-top">
+                        <div class="card-body">
+                            <p class="card-text">
+                                <i>Elongación.</i>
+                            </p>
+                            <a href="@image_3" target="_blank">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#212529" class="bi bi-search" viewBox="0 0 16 16">
+                                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Text -->
+                    <p>
+                        La <strong>elongación</strong> es la fase en la que se añaden aminoácidos de manera continua
+                        para formar la proteína. El ribosoma se desplaza a lo largo del ARNm "leyendo" los codones y
+                        añadiendo los aminoácidos correspondientes a la cadena en crecimiento. En el sitio A del ribosoma,
+                        se incorpora un ARNt con un nuevo aminoácido y una molécula energética (GTP). La enzima en el
+                        ribosoma une el aminoácido en el sitio A con el aminoácido en el sitio P. El ARNt en el sitio P,
+                        ahora libre de su aminoácido, se mueve al sitio E y sale del ribosoma. Este ciclo se repite hasta
+                        que el ribosoma encuentra un codón de parada en el ARNm.
+                    </p>
+                </div>
+                <!-- Item Content #5 -->
+                <div id="terminacion" class="item-content mb-3">
+                    <!-- Title -->
+                    <h4>Terminación de la síntesis de proteínas</h4>
+                    <!-- Image #4 -->
+                    <div id="image_4" class="card card-section">
+                        @{
+                            string image_4 = Url.Content("~/images/sintesis-de-proteinas-terminacion.webp");
+                        }
+                        <img src="@image_4" alt="Terminación de la síntesis de proteínas." class="card-img-top">
+                        <div class="card-body">
+                            <p class="card-text">
+                                <i>Terminación de la síntesis de proteínas</i>
+                            </p>
+                            <a href="@image_4" target="_blank">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#212529" class="bi bi-search" viewBox="0 0 16 16">
+                                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Text -->
+                    <p>
+                        La <strong>terminación</strong> ocurre cuando el ribosoma encuentra un codón de parada (UAA, UAG o UGA)
+                        en el ARNm, señalando el final de la proteína. Un factor de liberación se introduce en el ribosoma,
+                        lo que provoca la liberación de la proteína completa. Tanto el ribosoma como el ARNm pueden ser
+                        reutilizados para sintetizar nuevas proteínas. Un solo ARNm puede ser utilizado múltiples veces por
+                        diferentes ribosomas para producir la misma proteína.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="col-12 col-md-4 col-lg-3 col-xl-3 p-0">
+        <aside class="my-2">
+            <!-- Aside Title -->
+            <strong class="h6 my-2 ms-2">Pon a prueba tu conocimiento</strong>
+            <hr class="my-2 ms-2 me-4" />
+            <!-- Aside Content -->
+            <div class="aside-content px-4 mb-2">
+                <!-- Aside Form -->
+                <form id="aside-form-sintesisdeoroteinas" enctype="multipart/form-data">
+                    <!-- Order List -->
+                    <ol class="m-0 ps-3">
+                        <!-- Pregunta #1 -->
+                        <li>
+                            <!-- Pregunta -->
+                            <h6>¿Qué es la síntesis de proteínas?</h6>
+                            <div class="input-group input-group-column">
+                                <!-- Option #1 -->
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="question1" id="question1-option1" value="a">
+                                    <label class="form-check-label" for="question1-option1">
+                                        A) El proceso de descomposición de proteínas en aminoácidos
+                                    </label>
+                                </div>
+                                <!-- Option #2 -->
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="question1" id="question1-option2" value="b">
+                                    <label class="form-check-label" for="question1-option2">
+                                        B) El proceso de construir proteínas a partir de aminoácidos
+                                    </label>
+                                </div>
+                                <!-- Option #3 -->
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="question1" id="question1-option3" value="c">
+                                    <label class="form-check-label" for="question1-option3">
+                                        C) La producción de ácidos nucleicos en el núcleo celular
+                                    </label>
+                                </div>
+                                <!-- Option #4 -->
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="question1" id="question1-option4" value="d">
+                                    <label class="form-check-label" for="question1-option4">
+                                        D) La división de proteínas en células procariontes
+                                    </label>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- Pregunta #2 -->
+                        <li>
+                            <!-- Pregunta -->
+                            <h6>¿Cuál es el organelo celular encargado de la síntesis de proteínas?</h6>
+                            <div class="input-group input-group-column">
+                                <!-- Option #1 -->
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="question2" id="question2-option1" value="a">
+                                    <label class="form-check-label" for="question2-option1">
+                                        A) Mitocondria
+                                    </label>
+                                </div>
+                                <!-- Option #2 -->
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="question2" id="question2-option2" value="b">
+                                    <label class="form-check-label" for="question2-option2">
+                                        B) Núcleo
+                                    </label>
+                                </div>
+                                <!-- Option #3 -->
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="question2" id="question2-option3" value="c">
+                                    <label class="form-check-label" for="question2-option3">
+                                        C) Ribosoma
+                                    </label>
+                                </div>
+                                <!-- Option #4 -->
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="question2" id="question2-option4" value="d">
+                                    <label class="form-check-label" for="question2-option4">
+                                        D) Aparato de Golgi
+                                    </label>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- Pregunta #3 -->
+                        <li>
+                            <!-- Pregunta -->
+                            <h6>¿Cuál es la función del ARN mensajero (ARNm) en la síntesis de proteínas?</h6>
+                            <div class="input-group input-group-column">
+                                <!-- Option #1 -->
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="question3" id="question3-option1" value="a">
+                                    <label class="form-check-label" for="question3-option1">
+                                        A) Llevar aminoácidos al ribosoma
+                                    </label>
+                                </div>
+                                <!-- Option #2 -->
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="question3" id="question3-option2" value="b">
+                                    <label class="form-check-label" for="question3-option2">
+                                        B) Producir energía para la síntesis
+                                    </label>
+                                </div>
+                                <!-- Option #3 -->
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="question3" id="question3-option3" value="c">
+                                    <label class="form-check-label" for="question3-option3">
+                                        C) Llevar la información genética del ADN al ribosoma
+                                    </label>
+                                </div>
+                                <!-- Option #4 -->
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="question3" id="question3-option4" value="d">
+                                    <label class="form-check-label" for="question3-option4">
+                                        D) Formar enlaces entre aminoácidos
+                                    </label>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- Pregunta #4 -->
+                        <li>
+                            <!-- Pregunta -->
+                            <h6>¿Qué es un codón?</h6>
+                            <div class="input-group input-group-column">
+                                <!-- Option #1 -->
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="question4" id="question4-option1" value="a">
+                                    <label class="form-check-label" for="question4-option1">
+                                        A) Un tipo de proteína en el núcleo
+                                    </label>
+                                </div>
+                                <!-- Option #2 -->
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="question4" id="question4-option2" value="b">
+                                    <label class="form-check-label" for="question4-option2">
+                                        B) Un conjunto de tres nucleótidos en el ARNm que codifica un aminoácido
+                                    </label>
+                                </div>
+                                <!-- Option #3 -->
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="question4" id="question4-option3" value="c">
+                                    <label class="form-check-label" for="question4-option3">
+                                        C) Un aminoácido específico en el ribosoma
+                                    </label>
+                                </div>
+                                <!-- Option #4 -->
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="question4" id="question4-option4" value="d">
+                                    <label class="form-check-label" for="question4-option4">
+                                        D) Un organelo celular que sintetiza proteínas
+                                    </label>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- Pregunta #5 -->
+                        <li>
+                            <!-- Pregunta -->
+                            <h6>¿En qué etapa de la síntesis de proteínas se une el ribosoma al ARNm en el codón de inicio?</h6>
+                            <div class="input-group input-group-column">
+                                <!-- Option #1 -->
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="question5" id="question5-option1" value="a">
+                                    <label class="form-check-label" for="question5-option1">
+                                        A) Iniciación
+                                    </label>
+                                </div>
+                                <!-- Option #2 -->
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="question5" id="question5-option2" value="b">
+                                    <label class="form-check-label" for="question5-option2">
+                                        B) Elongación
+                                    </label>
+                                </div>
+                                <!-- Option #3 -->
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="question5" id="question5-option3" value="c">
+                                    <label class="form-check-label" for="question5-option3">
+                                        C) Terminación
+                                    </label>
+                                </div>
+                                <!-- Option #4 -->
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="question5" id="question5-option4" value="d">
+                                    <label class="form-check-label" for="question5-option4">
+                                        D) Repliegue
+                                    </label>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- Pregunta #6 -->
+                        <li>
+                            <!-- Pregunta -->
+                            <h6>¿Cuál es el primer aminoácido en la cadena proteica en la mayoría de los organismos?</h6>
+                            <div class="input-group input-group-column">
+                                <!-- Option #1 -->
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="question6" id="question6-option1" value="a">
+                                    <label class="form-check-label" for="question6-option1">
+                                        A) Lisina
+                                    </label>
+                                </div>
+                                <!-- Option #2 -->
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="question6" id="question6-option2" value="b">
+                                    <label class="form-check-label" for="question6-option2">
+                                        B) Glicina
+                                    </label>
+                                </div>
+                                <!-- Option #3 -->
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="question6" id="question6-option3" value="c">
+                                    <label class="form-check-label" for="question6-option3">
+                                        C) Metionina
+                                    </label>
+                                </div>
+                                <!-- Option #4 -->
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="question6" id="question6-option4" value="d">
+                                    <label class="form-check-label" for="question6-option4">
+                                        D) Valina
+                                    </label>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- Pregunta #7 -->
+                        <li>
+                            <!-- Pregunta -->
+                            <h6>Durante la etapa de elongación, ¿dónde se une un nuevo ARNt en el ribosoma?</h6>
+                            <div class="input-group input-group-column">
+                                <!-- Option #1 -->
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="question7" id="question7-option1" value="a">
+                                    <label class="form-check-label" for="question7-option1">
+                                        A) Sitio P
+                                    </label>
+                                </div>
+                                <!-- Option #2 -->
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="question7" id="question7-option2" value="b">
+                                    <label class="form-check-label" for="question7-option2">
+                                        B) Sitio E
+                                    </label>
+                                </div>
+                                <!-- Option #3 -->
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="question7" id="question7-option3" value="c">
+                                    <label class="form-check-label" for="question7-option3">
+                                        C) Sitio A
+                                    </label>
+                                </div>
+                                <!-- Option #4 -->
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="question7" id="question7-option4" value="d">
+                                    <label class="form-check-label" for="question7-option4">
+                                        D) Sitio C
+                                    </label>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- Pregunta #8 -->
+                        <li>
+                            <!-- Pregunta -->
+                            <h6>¿Qué sucede cuando el ribosoma encuentra un codón de parada en el ARNm?</h6>
+                            <div class="input-group input-group-column">
+                                <!-- Option #1 -->
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="question8" id="question8-option1" value="a">
+                                    <label class="form-check-label" for="question8-option1">
+                                        A) Se agrega un nuevo aminoácido
+                                    </label>
+                                </div>
+                                <!-- Option #2 -->
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="question8" id="question8-option2" value="b">
+                                    <label class="form-check-label" for="question8-option2">
+                                        B) Se inicia una nueva proteína
+                                    </label>
+                                </div>
+                                <!-- Option #3 -->
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="question8" id="question8-option3" value="c">
+                                    <label class="form-check-label" for="question8-option3">
+                                        C) Se detiene la síntesis y la proteína es liberada
+                                    </label>
+                                </div>
+                                <!-- Option #4 -->
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="question8" id="question8-option4" value="d">
+                                    <label class="form-check-label" for="question8-option4">
+                                        D) Se destruye el ribosoma
+                                    </label>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- Pregunta #9 -->
+                        <li>
+                            <!-- Pregunta -->
+                            <h6>¿Cuál es uno de los antibióticos que inhiben la síntesis de proteínas en bacterias?</h6>
+                            <div class="input-group input-group-column">
+                                <!-- Option #1 -->
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="question9" id="question9-option1" value="a">
+                                    <label class="form-check-label" for="question9-option1">
+                                        A) Paracetamol
+                                    </label>
+                                </div>
+                                <!-- Option #2 -->
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="question9" id="question9-option2" value="b">
+                                    <label class="form-check-label" for="question9-option2">
+                                        B) Gentamicina
+                                    </label>
+                                </div>
+                                <!-- Option #3 -->
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="question9" id="question9-option3" value="c">
+                                    <label class="form-check-label" for="question9-option3">
+                                        C) Ibuprofeno
+                                    </label>
+                                </div>
+                                <!-- Option #4 -->
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="question9" id="question9-option4" value="d">
+                                    <label class="form-check-label" for="question9-option4">
+                                        D) Aspirina
+                                    </label>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- Pregunta #10 -->
+                        <li>
+                            <!-- Pregunta -->
+                            <h6>¿Qué ocurre si hay un problema en el proceso de síntesis de proteínas?</h6>
+                            <div class="input-group input-group-column">
+                                <!-- Option #1 -->
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="question10" id="question10-option1" value="a">
+                                    <label class="form-check-label" for="question10-option1">
+                                        A) Las proteínas se producen más rápido
+                                    </label>
+                                </div>
+                                <!-- Option #2 -->
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="question10" id="question10-option2" value="b">
+                                    <label class="form-check-label" for="question10-option2">
+                                        B) No hay efecto en la célula
+                                    </label>
+                                </div>
+                                <!-- Option #3 -->
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="question10" id="question10-option3" value="c">
+                                    <label class="form-check-label" for="question10-option3">
+                                        C) Puede conducir a enfermedades
+                                    </label>
+                                </div>
+                                <!-- Option #4 -->
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="question10" id="question10-option4" value="d">
+                                    <label class="form-check-label" for="question10-option4">
+                                        D) Los aminoácidos se desintegran
+                                    </label>
+                                </div>
+                            </div>
+                        </li>
+                    </ol>
+                </form>
+            </div>
+            <!-- Aside Test Button -->
+            <div class="d-grid gap-2 mx-3">
+                <button id="aside-submit-btn" class="btn btn-outline-success" type="button" form="aside-form-sintesisdeoroteinas">Evaluar</button>
+            </div>
+        </aside>
+    </div>
+</div>
+
+<script>
+    // Variables globales para los IDs y clases
+    const ID_FORM = 'aside-form-sintesisdeoroteinas';
+    const ID_SUBMIT_BTN = 'aside-submit-btn';
+    const ID_ALERT_TEST = 'alert-test';
+    const ID_ALERT_TEST_RESPONSE = 'alert-test-response';
+    const ID_ALERT_CLOSE_BTN = 'alert-test-btn-close';
+
+    const CLASS_ALERT_SUCCESS = 'alert-success';
+    const CLASS_ALERT_DANGER = 'alert-danger';
+    const CLASS_D_NONE = 'd-none';
+    const CLASS_SHOW = 'show';
+
+    // Variable para controlar si ya se ha evaluado
+    let hasEvaluated = false;
+
+        document.addEventListener('DOMContentLoaded', function () {
+        // Función para evaluar respuestas
+        document.getElementById(ID_SUBMIT_BTN).addEventListener('click', function (event) {
+            if (hasEvaluated) return; // Evita que se evalúe más de una vez
+
+            event.preventDefault(); // Evita refrescar la página
+
+            // Obtener el formulario
+            const form = document.getElementById(ID_FORM);
+            const formData = new FormData(form);
+
+            // Enviar datos al servidor
+            fetch('/Noveno/SintesisDeProteinasTest/', {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => response.json()) // Procesar la respuesta del servidor
+            .then(data => {
+                console.log(data.mensaje);
+
+                // Respuestas correctas desde el servidor
+                const correctAnswers = {
+                    'question1': data.question1, 'question2': data.question2,
+                    'question3': data.question3, 'question4': data.question4,
+                    'question5': data.question5, 'question6': data.question6,
+                    'question7': data.question7, 'question8': data.question8,
+                    'question9': data.question9, 'question10': data.question10,
+                };
+
+                // Verificar respuestas del usuario
+                for (const question in correctAnswers) {
+                    const radios = document.getElementsByName(question);
+
+                    radios.forEach(radio => {
+                        const label = document.querySelector(`label[for="${radio.id}"]`);
+                        if (radio.checked) {
+                            label.style.color = radio.value === correctAnswers[question] ? 'green' : 'red';
+                        }
+                    });
+                }
+
+                // Insertar el mensaje devuelto por el servidor en el div de alerta
+                const alertTest = document.getElementById(ID_ALERT_TEST);
+                const testResponse = document.getElementById(ID_ALERT_TEST_RESPONSE);
+                testResponse.textContent = data.mensaje;
+
+                // Asignar clase a la alerta según aprobado o no
+                alertTest.classList.remove(CLASS_ALERT_SUCCESS, CLASS_ALERT_DANGER);
+                alertTest.classList.add(data.aprobado ? CLASS_ALERT_SUCCESS : CLASS_ALERT_DANGER);
+
+                // Mostrar la alerta
+                alertTest.classList.remove(CLASS_D_NONE);
+                alertTest.classList.add(CLASS_SHOW);
+            })
+            .catch(error => {
+                console.error('Error al enviar el formulario:', error);
+                const alertTest = document.getElementById(ID_ALERT_TEST);
+                const testResponse = document.getElementById(ID_ALERT_TEST_RESPONSE);
+                testResponse.textContent = "Error al procesar la solicitud. Intente de nuevo.";
+                alertTest.classList.remove(CLASS_D_NONE);
+                alertTest.classList.add(CLASS_ALERT_DANGER, CLASS_SHOW);
+            });
+
+            // Marcar como evaluado y deshabilitar el botón
+            hasEvaluated = true;
+            this.disabled = true;
+        });
+
+        // Cerrar la alerta y resetear el formulario
+        document.getElementById(ID_ALERT_CLOSE_BTN).addEventListener('click', function () {
+            const alertTest = document.getElementById(ID_ALERT_TEST);
+            alertTest.classList.remove(CLASS_SHOW);
+            alertTest.classList.add(CLASS_D_NONE);
+
+            // Reinicia el formulario
+            const form = document.getElementById(ID_FORM);
+            form.reset();
+
+            // Reiniciar color de los labels
+            const labels = form.querySelectorAll('label');
+            labels.forEach(label => label.style.color = '');
+
+            // Habilitar botón y resetear estado
+            const testBtn = document.getElementById(ID_SUBMIT_BTN);
+            testBtn.disabled = false;
+            hasEvaluated = false;
+        });
+    });
+</script>

@@ -1,0 +1,235 @@
+﻿<div class="row p-1" style="border: 1px solid #d6dbe0; border-radius: 4px;">
+    <div class="d-none d-lg-block col-lg-3 col-xl-3">
+        <nav id="navbar-example3" class="h-100 flex-column align-items-stretch pe-2 border-end">
+            <nav class="nav nav-pills flex-column">
+                <!-- Nav Guia Title -->
+                <strong class="h6 my-2 ms-3">Contenido</strong>
+                <hr class="my-2 ms-3 me-4" />
+                <!-- Nav Guia Items -->
+                <ul class="nav-guide m-0 p-0">
+                    <!-- Item #1 -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#...">...</a>
+                    </li>
+                    <!-- Item #2 -->
+                    <li class="nav-item">
+                        <a class="nav-link toggle-btn" href="#...">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+                                <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-up-fill" viewBox="0 0 16 16" style="display:none">
+                                <path d="m7.247 4.86-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z" />
+                            </svg>
+                            ...
+                        </a>
+                        <!-- Sub-Items -->
+                        <ul class="nav sublista flex-column ms-3">
+                            <!-- Sub-Item #1 -->
+                            <li class="nav-item">
+                                <a class="nav-link my-1" href="#...">...</a>
+                            </li>
+                            <!-- Sub-Item #2 -->
+                            <li class="nav-item">
+                                <a class="nav-link my-1" href="#...">...</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- Item #3 -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#...">...</a>
+                    </li>
+                </ul>
+            </nav>
+        </nav>
+    </div>
+    <div class="col-12 col-sm-7 col-md-8 col-lg-6 col-xl-6 p-0">
+        <!-- Section #1 -->
+        <section class="pe-1">
+            <!-- Title -->
+            <div class="row">
+                <div class="col">
+                    <h1 class="display-6">...</h1>
+                    <hr class="my-2 me-4" />
+                </div>
+            </div>
+            <!-- Section Body -->
+            <div class="row">
+                <div class="col">
+                    <div class="section-content scrollspy-example-3" data-bs-spy="scroll" data-bs-target="#navbar-example3" data-bs-offset="155" data-bs-smooth-scroll="true" tabindex="0">
+                        <!-- Item Content #1 -->
+                        <div id="..." class="item-content mb-3">
+                            <!-- Title -->
+                            <h4>...</h4>
+                            <!-- Text -->
+                            <p>
+                                ...
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="col-12 col-sm-5 col-md-4 col-lg-3 col-xl-3 pe-0">
+        <aside class="mt-2">
+            <!-- Aside Title -->
+            <strong class="h6 my-2 ms-2">Pon a prueba tu conocimiento</strong>
+            <hr class="my-2 ms-2 me-4" />
+            <!-- Aside Content -->
+            <div class="aside-content px-2 mb-2">
+                <!-- Aside Form -->
+                <form id="aside-form-..." enctype="multipart/form-data">
+                    <ol class="m-0 ps-3">
+                        <!-- Pregunta #1 -->
+                        <li>
+                            <!-- Pregunta -->
+                            <h6>...</h6>
+                            <div class="input-group input-group-column">
+                                <!-- Option #1 -->
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="question1" id="question1-option1" value="a">
+                                    <label class="form-check-label" for="question1-option1">
+                                        A)
+                                    </label>
+                                </div>
+                                <!-- Option #2 -->
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="question1" id="question1-option2" value="b">
+                                    <label class="form-check-label" for="question1-option2">
+                                        B)
+                                    </label>
+                                </div>
+                                <!-- Option #3 -->
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="question1" id="question1-option3" value="c">
+                                    <label class="form-check-label" for="question1-option3">
+                                        C)
+                                    </label>
+                                </div>
+                                <!-- Option #4 -->
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="question1" id="question1-option4" value="d">
+                                    <label class="form-check-label" for="question1-option4">
+                                        D)
+                                    </label>
+                                </div>
+                            </div>
+                        </li>
+                    </ol>
+                </form>
+            </div>
+            <!-- Aside Test Button -->
+            <div class="d-grid gap-2 me-2">
+                <button id="aside-submit-btn" class="btn btn-outline-success" type="button" form="aside-form-...">Evaluar</button>
+            </div>
+        </aside>
+    </div>
+</div>
+
+<div id="alert-test" class="alert alert-dismissible fade position-fixed d-none top-0 end-0 mx-3 my-4" role="alert" style="z-index: 1050;">
+    <span id="alert-test-response"></span>
+    <button id="alert-test-btn-close" class="btn-close" type="button" aria-label="Close"></button>
+</div>
+
+<script>
+    // Variables globales para los IDs y clases
+    const ID_FORM = 'aside-form-...';
+    const ID_SUBMIT_BTN = 'aside-submit-btn';
+    const ID_ALERT_TEST = 'alert-test';
+    const ID_ALERT_TEST_RESPONSE = 'alert-test-response';
+    const ID_ALERT_CLOSE_BTN = 'alert-test-btn-close';
+
+    const CLASS_ALERT_SUCCESS = 'alert-success';
+    const CLASS_ALERT_DANGER = 'alert-danger';
+    const CLASS_D_NONE = 'd-none';
+    const CLASS_SHOW = 'show';
+
+    // Variable para controlar si ya se ha evaluado
+    let hasEvaluated = false;
+
+    // Función para evaluar respuestas
+    document.getElementById(ID_SUBMIT_BTN).addEventListener('click', function (event) {
+        if (hasEvaluated) return; // Evita que se evalúe más de una vez
+
+        event.preventDefault(); // Evita refrescar la página
+
+        // Obtener el formulario
+        const form = document.getElementById(ID_FORM);
+        const formData = new FormData(form);
+
+        // Enviar datos al servidor
+        fetch('/septimo/taxonomiabiologicatest/', {
+            method: 'POST',
+            body: formData
+        })
+        .then(response => response.json()) // Procesar la respuesta del servidor
+        .then(data => {
+            console.log(data.mensaje);
+
+            // Respuestas correctas desde el servidor
+            const correctAnswers = {
+                'question1': data.question1, 'question2': data.question2,
+                'question3': data.question3, 'question4': data.question4,
+                'question5': data.question5, 'question6': data.question6,
+                'question7': data.question7, 'question8': data.question8,
+            };
+
+            // Verificar respuestas del usuario
+            for (const question in correctAnswers) {
+                const radios = document.getElementsByName(question);
+
+                radios.forEach(radio => {
+                    const label = document.querySelector(`label[for="${radio.id}"]`);
+                    if (radio.checked) {
+                        label.style.color = radio.value === correctAnswers[question] ? 'green' : 'red';
+                    }
+                });
+            }
+
+            // Insertar el mensaje devuelto por el servidor en el div de alerta
+            const alertTest = document.getElementById(ID_ALERT_TEST);
+            const testResponse = document.getElementById(ID_ALERT_TEST_RESPONSE);
+            testResponse.textContent = data.mensaje;
+
+            // Asignar clase a la alerta según aprobado o no
+            alertTest.classList.remove(CLASS_ALERT_SUCCESS, CLASS_ALERT_DANGER);
+            alertTest.classList.add(data.aprobado ? CLASS_ALERT_SUCCESS : CLASS_ALERT_DANGER);
+
+            // Mostrar la alerta
+            alertTest.classList.remove(CLASS_D_NONE);
+            alertTest.classList.add(CLASS_SHOW);
+        })
+        .catch(error => {
+            console.error('Error al enviar el formulario:', error);
+            const alertTest = document.getElementById(ID_ALERT_TEST);
+            const testResponse = document.getElementById(ID_ALERT_TEST_RESPONSE);
+            testResponse.textContent = "Error al procesar la solicitud. Intente de nuevo.";
+            alertTest.classList.remove(CLASS_D_NONE);
+            alertTest.classList.add(CLASS_ALERT_DANGER, CLASS_SHOW);
+        });
+
+        // Marcar como evaluado y deshabilitar el botón
+        hasEvaluated = true;
+        this.disabled = true;
+    });
+
+    // Cerrar la alerta y resetear el formulario
+    document.getElementById(ID_ALERT_CLOSE_BTN).addEventListener('click', function () {
+        const alertTest = document.getElementById(ID_ALERT_TEST);
+        alertTest.classList.remove(CLASS_SHOW);
+        alertTest.classList.add(CLASS_D_NONE);
+
+        // Reinicia el formulario
+        const form = document.getElementById(ID_FORM);
+        form.reset();
+
+        // Reiniciar color de los labels
+        const labels = form.querySelectorAll('label');
+        labels.forEach(label => label.style.color = '');
+
+        // Habilitar botón y resetear estado
+        const testBtn = document.getElementById(ID_SUBMIT_BTN);
+        testBtn.disabled = false;
+        hasEvaluated = false;
+    });
+</script>
